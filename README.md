@@ -65,19 +65,19 @@ All
 
 
 ## Languages and Tools:
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://next-auth.js.org/" target="_blank" rel="noreferrer"> <img src="https://next-auth.js.org/img/logo/logo-sm.png" alt="nextauthjs" width="40" height="40"/> </p>
+<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://flickr.com/photos/factoryjoe/1529124811/in/pool-519057@N23" alt="nextauthjs" width="40" height="40"/> </p>
 
  
 
-### [Youtube Demo Link](https://youtu.be/4JBsmb1RRRg)
+### [Youtube Demo of version 1](https://youtu.be/4JBsmb1RRRg)
 
 
  
 ## Setting up the project:
 
-1. `git clone https://github.com/gdscnitp/Environmental-Awareness-App.git` 
+1. `git clone https://github.com/SrijanShovit/Carbonops-v2.git` 
 
-2. `cd ./Environmental-Awareness-App`
+2. `cd ./Carbonops-v2`
 
 3. Install node dependencies 
    - `npm install`
@@ -85,12 +85,9 @@ All
 4. Set up a `.env` file 
    - Add relevant credentials in the .env file with the help of .env.example file.
 
-5. `Allow access to less secure apps on the Mail ID`
-   - You need to add in the .env file from here: [Nodemailer](https://nodemailer.com/usage/using-gmail/)
+5. Start the server: `npm run dev`
 
-6. Start the server: `npm run dev`
-
-7. Open http://localhost:3000 with your browser to see the app up and running 🎉🥳🎊.
+6. Open http://localhost:3000 with your browser to see the app up and running 🎉🥳🎊.
 
 
 Having issues in understanding the codebase?
@@ -100,18 +97,8 @@ Then head over to documentation, give yourself some time and please comeback to 
 
 [Next.js](https://nextjs.org/docs)
 
-[NextAuth.js](https://next-auth.js.org/getting-started/introduction)
+[OAuth](https://oauth.net/getting-started/)
 
-[Next.js Github repository](https://github.com/vercel/next.js/)
-
-## Our budding contributors:
-
-<a href="https://github.com/gdscnitp/Environmental-Awareness-App/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=gdscnitp/Environmental-Awareness-App" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
- 
 
 <h4>If you 💓 this, do smash the ⭐ button!!</h4>
 
