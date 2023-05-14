@@ -71,6 +71,8 @@ All
 
 ### [Youtube Demo of version 1](https://youtu.be/4JBsmb1RRRg)
 
+### [Repo Link v1](https://github.com/SrijanShovit/Carbonops)
+
 
  
 ## Setting up the project:
