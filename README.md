@@ -30,19 +30,19 @@ The site will have two portals:
 - They will have a personalized dashboard or portfolio where they can keep a watch over themselves and pat their backs for everyone positive effort they put.
 - Users will get timely notification to update their carbon score.
 - Giving users the ability to monitor their carbon footprint progress. Questionnaires to determine a user’s personal and unique carbon score to understand how much CO2 they are producing.
-- Depending on score, we can have recommendation system to help a user with personalized recommendations where one is lagging in their efforts.
+- Depending on the score, we can have a recommendation system to help a user with personalized recommendations where one is lagging in their efforts.
 - A social media sharing option can allow users to post their carbon scores.
 - People can participate in/ host Monthly/ Weekly events or go green challenges and see who can go most sustainable. They can also win awards and badges.
 
 
 **2) Eco-friendly startups**
-- An interface where people/organisations can buy raw materials or products directly from the startups.
+- An interface where people/organizations can buy raw materials or products directly from the startups.
 - People can donate/sell the waste products directly to eco-friendly startups utilizing those specific materials.
 - Featured profiles of startups on the basis of ratings of products and impact.
 
 ## Objectives:
 - This app aims at creating environmental awareness among people. The app will educate people on the steps they can personally take to reduce their carbon footprint and will help to bring together environment-conscious people where they can start a discussion.
-- The app will acquaint users with information about various eco friendly alternatives they can use and will act as an easy medium to access those alternatives.
+- The app will acquaint users with information about various eco-friendly alternatives they can use and will act as an easy medium to access those alternatives.
 - It will be easier for startups to access the materials required easily and will help them scale up their business at a faster rate. 
 - A substantial amount of usable waste will not be lost because the waste will be already segregated.
 - People will get to know about various incentives that are being taken up by those companies and this will advertise environmentally sustainable products and will bring off the objective of the app.
@@ -56,7 +56,7 @@ Do have a look below
 <img src="https://github.com/gdscnitp/Environmental-Awareness-App/blob/main/Env-awareness.drawio.png" alt="ER" width="1100" height="700"/>
 
 
-## Target audiance: 
+## Target audience: 
 All
 
 ## Project constraints:
@@ -65,7 +65,7 @@ All
 
 
 ## Languages and Tools:
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://flickr.com/photos/factoryjoe/1529124811/in/pool-519057@N23" alt="nextauthjs" width="40" height="40"/> </p>
+<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://oauth.net/images/oauth-logo-square.png" alt="nextauthjs" width="40" height="40"/> </p>
 
  
 
