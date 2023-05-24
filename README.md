@@ -2,6 +2,12 @@
 
  <font size=1> A 💻 web application for creating personalized accountancy towards our🌲environment among 🤝‍🧑 people. </font>
  
+ <div align="left">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+  <br></div>
+
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SrijanShovit/Carbonops-v2?logo=github&style=for-the-badge)](https://github.com/SrijanShovit/) 
 [![GitHub last commit](https://img.shields.io/github/last-commit/gdscnitp/Environmental-Awareness-App?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
 [![GitHub stars](https://img.shields.io/github/stars/SrijanShovit/Carbonops-v2?style=for-the-badge)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
@@ -11,8 +17,9 @@
 [![Top](https://img.shields.io/github/languages/top/SrijanShovit/Carbonops-v2?style=for-the-badge&label=Top%20Languages)](https://github.com/SrijanShovit/Carbonops-v2)
 [![Issues](https://img.shields.io/github/issues/SrijanShovit/Carbonops-v2?style=for-the-badge&label=Issues)](https://github.com/SrijanShovit/Carbonops-v2)
 [![Watchers](	https://img.shields.io/github/watchers/SrijanShovit/Carbonops-v2?label=Watch&style=for-the-badge)](https://github.com/SrijanShovit/Carbonops-v2/) 
-
-
+ <img src="https://img.shields.io/github/contributors/SrijanShovit/carbonops-v2?style=for-the-badge" />
+ <img src="https://img.shields.io/github/issues-pr/SrijanShovit/carbonops-v2?style=for-the-badge" />
+ 
 ## Problems Addressed:
 
 - Creating environmental awareness among people is crucial as individuals often overlook the significance of their carbon footprint and the environmental impact resulting from their daily activities.
