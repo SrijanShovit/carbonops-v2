@@ -60,7 +60,8 @@ The site will have two portals:
 Wanna know how the flow of all records is being planned in the app?🤔
 Do have a look below
 ## Database ER diagram:
-<img src="https://github.com/gdscnitp/Environmental-Awareness-App/blob/main/Env-awareness.drawio.png" alt="ER" width="1100" height="700"/>
+![Env-awareness drawio](https://github.com/Manice18/carbonops-v2/assets/91601706/9027251f-8080-4a37-a7a1-e99c762b6e9e)
+
 
 
 ## Target audiance: 
@@ -72,7 +73,7 @@ All
 
 
 ## Languages and Tools:
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://oauth.net/images/oauth-logo-square.png" alt="nextauthjs" width="40" height="40"/> </p> 
+<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=512&id=cREyrHivHRHF&format=png" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://oauth.net/images/oauth-logo-square.png" alt="nextauthjs" width="40" height="40"/> </p> 
 
  
 
