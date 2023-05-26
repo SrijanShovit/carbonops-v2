@@ -9,7 +9,7 @@ body:
       label: Description
       description: A brief description of the enhancement you propose, also include what you tried and what worked.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshots
     attributes:
