@@ -16,7 +16,6 @@ const Navbar = () => {
       setNavColor(false);
     }
   };
-
   window.addEventListener("scroll", changeNavColor);
   return (
     <>
@@ -25,14 +24,14 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "sticky top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#152023] duration-200 ease-out"
-              : "sticky top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#152023] md:bg-[#12323f]"
+              ? "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#152023]"
+              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#152023] md:bg-[#12323f]"
           }
         >
           {/* Navmenu */}
           <div className="flex justify-between items-center">
             <a href="#home">
-              <h1 className="text-2xl md:text-3xl">CARBON-OPS</h1>
+              <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1>
             </a>
             {/* Desktop Navmenu */}
             <nav className="hidden md:flex justify-center items-center gap-8">
@@ -43,7 +42,7 @@ const Navbar = () => {
                 Signup
               </button>
             </nav>
-            {/* Add functionallity to switch between cross and bars with navbar */}
+            {/* Hamburger button */}
             <button
               className="md:hidden text-xl hover:text-[#00BD57] ease-out duration-150"
               onClick={handleNav}
