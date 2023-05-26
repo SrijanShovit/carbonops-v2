@@ -1,26 +1,40 @@
-name: General Feature Request 💡
-description: Have a new idea/feature for Carboops? Please suggest!
+name: 🌟 General Feature Request 💡
+description: Have a new idea/feature for GGSOC? Please suggest!
 title: "[FEATURE] <description>"
-labels: ["⭐ goal: addition", "🚦 status: awaiting triage"]
+labels: ["⭐️ goal: addition", "🚦 status: awaiting triage"]
 body:
   - type: textarea
     id: description
     attributes:
-      label: Description
+      label: 📝 Description
       description: A brief description of the enhancement you propose, also include what you tried and what worked.
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots
-      description: Please add screenshots if applicable
+      label: 🖼️ Screenshots
+      description: Please add screenshots if applicable.
     validations:
       required: false
   - type: textarea
     id: extrainfo
     attributes:
-      label: Additional information
+      label: ℹ️ Additional Information
       description: Is there anything else we should know about this idea?
+    validations:
+      required: false
+  - type: textarea
+    id: contributing
+    attributes:
+      label: 🙌 Contribution Guidelines
+      description: Please provide any guidelines or instructions for contributors interested in working on this feature.
+    validations:
+      required: false
+  - type: textarea
+    id: resources
+    attributes:
+      label: 📚 Resources
+      description: If there are any relevant resources or references related to this feature, please provide them here.
     validations:
       required: false
