@@ -29,7 +29,7 @@ const Navbar = () => {
           }
         >
           {/* Navmenu */}
-          <div className="flex justify-between items-center">
+          <div className="w-[95%] mx-auto flex justify-between items-center">
             <a href="#home">
               <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1>
             </a>
