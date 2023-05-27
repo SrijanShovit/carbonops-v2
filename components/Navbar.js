@@ -25,7 +25,7 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f]"
+              ? "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
               : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023]"
           }
         >
