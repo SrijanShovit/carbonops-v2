@@ -32,6 +32,12 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="w-[95%] md:w-[70%] mx-auto mt-16">
+        <h2 className="text-center text-3xl ">
+          We provide awesome <span className="text-[#00BD57]">services</span>{" "}
+          for individuals and startups to excel
+        </h2>
+      </div>
     </>
   );
 };

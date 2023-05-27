@@ -25,8 +25,8 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#152023]"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#152023] md:bg-[#12323f]"
+              ? "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f]"
+              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023]"
           }
         >
           {/* Navmenu */}
@@ -60,7 +60,7 @@ const Navbar = () => {
             <nav
               className={
                 !nav
-                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-8 h-full flex flex-col justify-start items-center gap-6 bg-[#152023] duration-200 ease-in-out"
+                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-8 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
                   : "hidden"
               }
             >

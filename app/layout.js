@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-full bg-[#12323f] font-sans text-white mt-20 px-8 md:px-12 py-4">
+      <body className="w-full bg-[#152023] font-sans text-white mt-20 px-8 md:px-12 py-4">
         <Navbar />
         {children}
       </body>
