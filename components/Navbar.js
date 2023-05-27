@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Image from "next/image";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -19,7 +20,7 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavColor);
   return (
     <>
-      <main className="font-mono text-white">
+      <main className="text-white">
         {/* Fixed Nav */}
         <header
           className={
@@ -31,7 +32,12 @@ const Navbar = () => {
           {/* Navmenu */}
           <div className="w-[95%] mx-auto flex justify-between items-center">
             <a href="#home">
-              <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1>
+              {/* <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1> */}
+              <Image
+                src="/../public/images/Carbonops.png"
+                width={200}
+                height={200}
+              />
             </a>
             {/* Desktop Navmenu */}
             <nav className="hidden md:flex justify-center items-center gap-8">
@@ -66,6 +72,7 @@ const Navbar = () => {
               </button>
             </nav>
           </div>
+          {/* <img src={Logo} /> */}
         </header>
       </main>
     </>
