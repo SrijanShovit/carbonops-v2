@@ -2,7 +2,13 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <div className="mt-28 ">
+      <div className="my-36 ">
+        <div className="w-[95%] md:w-[70%] mx-auto mt-36 mb-20">
+          <h2 className="text-center text-3xl font-semibold">
+            We provide awesome <span className="text-[#00BD57]">services</span>{" "}
+            for individuals and startups to excel
+          </h2>
+        </div>
         {/* Container */}
         <div className="md:w-[85%] mx-auto flex flex-col md:flex-row gap-12 md:gap-8 justify-center items-center">
           {/* left */}
