@@ -15,7 +15,7 @@ const Graph = () => {
               <h2 className="text-4xl">
                 The Carbon <sapn className="text-[#00BD57]">Graph</sapn>
               </h2>
-              <h3 className="tex-3xl text-center md:text-start">
+              <h3 className="text-2xl text-center md:text-start">
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots in a piece of classical Latin literature from
                 45 BC, making it over 2000 years old.

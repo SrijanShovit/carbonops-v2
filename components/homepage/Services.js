@@ -4,7 +4,7 @@ const Services = () => {
     <>
       <div className="my-36 ">
         <div className="w-[95%] md:w-[70%] mx-auto mt-36">
-          <h2 className="px-32 text-center text-3xl font-semibold">
+          <h2 className="md:px-32 text-center text-3xl font-semibold">
             We provide awesome <span className="text-[#00BD57]">services</span>{" "}
             for individuals and startups to excel
           </h2>

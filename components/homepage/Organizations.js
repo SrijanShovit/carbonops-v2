@@ -4,7 +4,7 @@ const Organizations = () => {
     <>
       <div className="my-36">
         <div className="md:w-[80%] mx-auto">
-          <h3 className="px-32 text-3xl text-center font-semibold">
+          <h3 className="md:px-32 text-3xl text-center font-semibold">
             These are the best two top{" "}
             <span className="text-[#00BD57]">Organizations</span> which
             performed the best in the last contest
