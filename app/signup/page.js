@@ -25,7 +25,7 @@ const SignupAs = () => {
                 />
               </div>
               <div className="bg-[#12323f] w-[100%] rounded-b-md flex flex-col justify-center items-center">
-                <div className="text-center py-6 text-lg text-[#53c6f2]">
+                <div className="text-center py-6 text-lg text-[#00BD57]">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -37,7 +37,7 @@ const SignupAs = () => {
                     href="/signup/individual"
                     className="text-lg text-white bg-[#00BD57] py-2 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out "
                   >
-                    Individual Signup
+                    For individuals
                   </Link>
                 </div>
               </div>
@@ -49,14 +49,14 @@ const SignupAs = () => {
               <div className="py-0 ">
                 <Image
                   src={CardImageRight}
-                  height={400}
-                  width={325}
+                  height={350}
+                  width={320}
                   alt="My image"
                   className="rounded-t-md"
                 />
               </div>
               <div className="bg-[#12323f] w-[100%] rounded-b-md flex flex-col justify-center items-center">
-                <div className="text-center py-6 text-lg text-[#53c6f2]">
+                <div className="text-center py-6 text-lg text-[#00BD57]">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -68,7 +68,7 @@ const SignupAs = () => {
                     href="/signup/organization"
                     className="text-lg text-white bg-[#00BD57] py-2 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out "
                   >
-                    Organization Signup
+                    For Organizations
                   </Link>
                 </div>
               </div>

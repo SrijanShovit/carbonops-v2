@@ -1,3 +1,5 @@
+import graphImage from "../../public/images/homepage/graph.png";
+import Image from "next/image";
 const Graph = () => {
   return (
     <>
@@ -5,8 +7,8 @@ const Graph = () => {
         <div className="md:w-[80%] mx-auto flex flex-col-reverse md:flex-row justify-center items-start gap-12 md:gap-16">
           {/* left */}
           <div className=" w-full md:flex-1">
-            <div className="bg-[#113643] h-60 text-center rounded-md">
-              Add graph here
+            <div className=" h-60 text-center rounded-md">
+              <Image src={graphImage} height={500} width={500} />
             </div>
           </div>
           {/* right */}

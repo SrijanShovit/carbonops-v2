@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import HeroImage from "../../public/images/homepage/Hero.png";
 const Hero = () => {
   return (
     <>
@@ -25,11 +26,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="">
-          <Image
-            src="/../public/images/homepage/Hero.png"
-            width={600}
-            height={600}
-          />
+          <Image src={HeroImage} width={600} height={600} />
         </div>
       </div>
     </>
