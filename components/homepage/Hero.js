@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Hero = () => {
   return (
     <>
-      <div className="w-[90%] mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-4">
+      <div className="mt-20 md:mt-[12rem] w-[90%] mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-4">
         <div className="md:w-[40%]">
           <div className="flex flex-col justify-center md:items-start items-center gap-2">
             <h2 className="text-center md:text-start text-4xl">
