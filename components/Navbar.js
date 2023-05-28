@@ -17,7 +17,9 @@ const Navbar = () => {
       setNavColor(false);
     }
   };
-  window.addEventListener("scroll", changeNavColor);
+  if (typeof window !== "undefined")
+    window.addEventListener("scroll", changeNavColor);
+
   return (
     <>
       <main className="text-white">
