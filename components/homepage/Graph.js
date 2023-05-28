@@ -20,7 +20,7 @@ const Graph = () => {
           <div className="flex-1">
             <div className="flex flex-col gap-8 items-center md:items-start">
               <h2 className="text-4xl">
-                The Carbon <sapn className="text-[#00BD57]">Graph</sapn>
+                The Carbon <span className="text-[#00BD57]">Graph</span>
               </h2>
               <h3 className="text-2xl text-center md:text-start">
                 Contrary to popular belief, Lorem Ipsum is not simply random
