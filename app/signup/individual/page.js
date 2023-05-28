@@ -12,7 +12,12 @@ const IndividualSignup = () => {
           <div className="flex flex-col md:flex-row justify-between items-center p-4">
             <div className="w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4">
               <div>
-                <Image src={welcomeImage} height={500} width={500} />
+                <Image
+                  src={welcomeImage}
+                  height={500}
+                  width={500}
+                  alt="Welcome to Carbonops"
+                />
               </div>
               <button>
                 Already registered?{" "}
@@ -45,7 +50,12 @@ const IndividualSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={emailIcon} width={30} height={30} />
+                      <Image
+                        src={emailIcon}
+                        width={30}
+                        height={30}
+                        alt="Email"
+                      />
                     </div>
                   </div>
                 </div>
@@ -60,7 +70,12 @@ const IndividualSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={phoneIcon} width={30} height={30} />
+                      <Image
+                        src={phoneIcon}
+                        width={30}
+                        height={30}
+                        alt="Contact"
+                      />
                     </div>
                   </div>
                 </div>
@@ -75,7 +90,12 @@ const IndividualSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={cakeIcon} width={30} height={30} />
+                      <Image
+                        src={cakeIcon}
+                        width={30}
+                        height={30}
+                        alt="Date of Birth"
+                      />
                     </div>
                   </div>
                 </div>
@@ -90,7 +110,12 @@ const IndividualSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={lockIcon} width={30} height={30} />
+                      <Image
+                        src={lockIcon}
+                        width={30}
+                        height={30}
+                        alt="Password"
+                      />
                     </div>
                   </div>
                 </div>
@@ -105,7 +130,12 @@ const IndividualSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={lockIcon} width={30} height={30} />
+                      <Image
+                        src={lockIcon}
+                        width={30}
+                        height={30}
+                        alt="Confirm Password"
+                      />
                     </div>
                   </div>
                 </div>

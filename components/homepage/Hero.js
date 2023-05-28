@@ -25,8 +25,13 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="">
-          <Image src={HeroImage} width={600} height={600} />
+        <div>
+          <Image
+            src={HeroImage}
+            width={600}
+            height={600}
+            alt="Carbonops hero image"
+          />
         </div>
       </div>
     </>

@@ -10,6 +10,7 @@ const Footer = () => {
                 src="/../public/images/Carbonops.png"
                 width={280}
                 height={280}
+                alt="Carbonops"
               />
             </div>
             <h3 className="text-lg">Terms and Conditions</h3>
@@ -38,6 +39,7 @@ const Footer = () => {
                   src="/../public/images/footer/Google.png"
                   width={35}
                   height={35}
+                  alt="Carbonops Google"
                 />
               </a>
               <a
@@ -49,6 +51,7 @@ const Footer = () => {
                   src="/../public/images/footer/Facebook.png"
                   width={35}
                   height={35}
+                  alt="Carbonops Facebook"
                 />
               </a>
               <a
@@ -60,6 +63,7 @@ const Footer = () => {
                   src="/../public/images/footer/Twitter.png"
                   width={35}
                   height={35}
+                  alt="Carbonops Twitter"
                 />
               </a>
             </div>

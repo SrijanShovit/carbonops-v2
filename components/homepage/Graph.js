@@ -8,7 +8,12 @@ const Graph = () => {
           {/* left */}
           <div className=" w-full md:flex-1">
             <div className=" h-60 text-center rounded-md">
-              <Image src={graphImage} height={500} width={500} />
+              <Image
+                src={graphImage}
+                height={500}
+                width={500}
+                alt="The Carbon Graph"
+              />
             </div>
           </div>
           {/* right */}

@@ -3,7 +3,6 @@ import welcomeImage from "../../../public/images/signup/welcome_img.png";
 import emailIcon from "../../../public/icons/email.png";
 import lockIcon from "../../../public/icons/lock.png";
 import phoneIcon from "../../../public/icons/phone.png";
-import cakeIcon from "../../../public/icons/cake.png";
 import contactIcon from "../../../public/icons/contact.png";
 const OrganizationSignup = () => {
   return (
@@ -13,7 +12,12 @@ const OrganizationSignup = () => {
           <div className="flex flex-col md:flex-row justify-between items-center p-4">
             <div className="w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4">
               <div>
-                <Image src={welcomeImage} height={500} width={500} />
+                <Image
+                  src={welcomeImage}
+                  height={500}
+                  width={500}
+                  alt="Welcome to Carbonops"
+                />
               </div>
               <button>
                 Already registered?{" "}
@@ -46,7 +50,12 @@ const OrganizationSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={emailIcon} width={30} height={30} />
+                      <Image
+                        src={emailIcon}
+                        width={30}
+                        height={30}
+                        alt="Email"
+                      />
                     </div>
                   </div>
                 </div>
@@ -61,7 +70,12 @@ const OrganizationSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={phoneIcon} width={30} height={30} />
+                      <Image
+                        src={phoneIcon}
+                        width={30}
+                        height={30}
+                        alt="Contact"
+                      />
                     </div>
                   </div>
                 </div>
@@ -76,7 +90,12 @@ const OrganizationSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={contactIcon} width={30} height={30} />
+                      <Image
+                        src={contactIcon}
+                        width={30}
+                        height={30}
+                        alt="Date of Birth"
+                      />
                     </div>
                   </div>
                 </div>
@@ -91,7 +110,12 @@ const OrganizationSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={lockIcon} width={30} height={30} />
+                      <Image
+                        src={lockIcon}
+                        width={30}
+                        height={30}
+                        alt="Password"
+                      />
                     </div>
                   </div>
                 </div>
@@ -106,7 +130,12 @@ const OrganizationSignup = () => {
                       />
                     </div>
                     <div>
-                      <Image src={lockIcon} width={30} height={30} />
+                      <Image
+                        src={lockIcon}
+                        width={30}
+                        height={30}
+                        alt="Confirm Password"
+                      />
                     </div>
                   </div>
                 </div>

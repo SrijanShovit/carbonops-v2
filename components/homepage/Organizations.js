@@ -22,7 +22,7 @@ const Organizations = () => {
                 src={OrganizationsImage1}
                 width={330}
                 height={330}
-                alt="Mt Documens"
+                alt="Documents"
               />
             </div>
             <div className="w-[80%] mx-auto text-center text-lg">
