@@ -28,8 +28,8 @@ const Organizations = () => {
             <div className="w-[80%] mx-auto text-center text-lg">
               <h3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took
+                industry. Lorem Ipsum has been the industry &apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took
               </h3>
               <div className="mt-4">
                 <p>-Albus Dumbledore</p>
@@ -50,8 +50,8 @@ const Organizations = () => {
             <div className="w-[80%] mx-auto text-center text-lg mt-8">
               <h3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took
+                industry. Lorem Ipsum has been the industry &apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took
               </h3>
               <div className="mt-4">
                 <p>-Albus Dumbledore</p>

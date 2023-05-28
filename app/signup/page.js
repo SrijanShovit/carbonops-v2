@@ -20,7 +20,7 @@ const SignupAs = () => {
                   src={CardImageLeft}
                   height={350}
                   width={320}
-                  alt="Individual's image"
+                  alt="Individual image"
                   className="rounded-t-md"
                 />
               </div>
@@ -51,7 +51,7 @@ const SignupAs = () => {
                   src={CardImageRight}
                   height={350}
                   width={320}
-                  alt="Organization's Image"
+                  alt="Organization Image"
                   className="rounded-t-md"
                 />
               </div>
