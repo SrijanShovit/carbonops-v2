@@ -4,6 +4,7 @@ import emailIcon from "../../../public/icons/email.png";
 import lockIcon from "../../../public/icons/lock.png";
 import phoneIcon from "../../../public/icons/phone.png";
 import cakeIcon from "../../../public/icons/cake.png";
+import Link from "next/link";
 const IndividualSignup = () => {
   return (
     <>
@@ -21,9 +22,12 @@ const IndividualSignup = () => {
               </div>
               <button>
                 Already registered?{" "}
-                <span className="text-[#00bd57] duration-300 ease-in-out hover:underline cursor-pointer">
+                <Link
+                  href="/login"
+                  className="text-[#00bd57] duration-300 ease-in-out hover:underline cursor-pointer"
+                >
                   Login Now!
-                </span>
+                </Link>
               </button>
             </div>
             <div className="mt-8 md:mt-0 w-full flex flex-col justify-between items-center gap-2">
