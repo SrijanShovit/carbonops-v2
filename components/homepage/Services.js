@@ -1,6 +1,6 @@
 import Image from "next/image";
 import serviceImage1 from "../../public/images/homepage/service-1.png";
-import serviceImage2 from "../../public/images/homepage/interview.png";
+import serviceImage2 from "../../public/images/homepage/Interview.png";
 const Services = () => {
   return (
     <>
