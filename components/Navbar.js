@@ -45,9 +45,12 @@ const Navbar = () => {
             </a>
             {/* Desktop Navmenu */}
             <nav className="hidden md:flex justify-center items-center gap-8">
-              <button className="text-lg hover:text-[#00BD57] ease-out duration-200">
+              <Link
+                href="/login"
+                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+              >
                 Login
-              </button>
+              </Link>
               <Link
                 href="/signup"
                 className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
