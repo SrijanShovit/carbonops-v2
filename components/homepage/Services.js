@@ -1,4 +1,6 @@
 import Image from "next/image";
+import serviceImage1 from "../../public/images/homepage/service-1.png";
+import serviceImage2 from "../../public/images/homepage/Interview.png";
 const Services = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Services = () => {
           <div className="flex-1 flex flex-col items-center justify-between">
             <div>
               <Image
-                src="/../public/images/homepage/service-1.png"
+                src={serviceImage1}
                 width={330}
                 height={330}
                 alt="Services"
@@ -24,8 +26,8 @@ const Services = () => {
             <div className="w-[80%] mx-auto text-center text-lg">
               <h3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took
+                industry. Lorem Ipsum has been the industry &apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took
               </h3>
             </div>
           </div>
@@ -33,7 +35,7 @@ const Services = () => {
           <div className="flex-1 flex flex-col items-center justify-between">
             <div>
               <Image
-                src="/../public/images/homepage/interview.png"
+                src={serviceImage2}
                 width={330}
                 height={330}
                 alt="Interview"
@@ -42,8 +44,8 @@ const Services = () => {
             <div className="w-[80%] mx-auto text-center text-lg">
               <h3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took
+                industry. Lorem Ipsum has been the industry &apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took
               </h3>
             </div>
           </div>

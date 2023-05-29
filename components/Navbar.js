@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
@@ -27,7 +28,7 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
+              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
               : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023]"
           }
         >
@@ -39,6 +40,7 @@ const Navbar = () => {
                 src="/../public/images/Carbonops.png"
                 width={200}
                 height={200}
+                alt="CarbonOps"
               />
             </a>
             {/* Desktop Navmenu */}
@@ -46,9 +48,12 @@ const Navbar = () => {
               <button className="text-lg hover:text-[#00BD57] ease-out duration-200">
                 Login
               </button>
-              <button className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out">
+              <Link
+                href="/signup"
+                className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+              >
                 Signup
-              </button>
+              </Link>
             </nav>
             {/* Hamburger button */}
             <button

@@ -2,7 +2,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="w-full bg-[#12323f] py-12">
+      <div className="w-[100%] bg-[#12323f] py-12">
         <div className="md:w-[85%] mx-auto flex justify-between flex-col md:flex-row md:gap-12">
           <div className="md:w-1/4 flex flex-col justify-between items-center gap-4 md:gap-[1.5rem]">
             <div>
@@ -10,6 +10,7 @@ const Footer = () => {
                 src="/../public/images/Carbonops.png"
                 width={280}
                 height={280}
+                alt="Carbonops"
               />
             </div>
             <h3 className="text-lg">Terms and Conditions</h3>
@@ -38,6 +39,7 @@ const Footer = () => {
                   src="/../public/images/footer/Google.png"
                   width={35}
                   height={35}
+                  alt="Carbonops Google"
                 />
               </a>
               <a
@@ -49,6 +51,7 @@ const Footer = () => {
                   src="/../public/images/footer/Facebook.png"
                   width={35}
                   height={35}
+                  alt="Carbonops Facebook"
                 />
               </a>
               <a
@@ -60,6 +63,7 @@ const Footer = () => {
                   src="/../public/images/footer/Twitter.png"
                   width={35}
                   height={35}
+                  alt="Carbonops Twitter"
                 />
               </a>
             </div>

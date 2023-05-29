@@ -1,3 +1,5 @@
+import graphImage from "../../public/images/homepage/graph.png";
+import Image from "next/image";
 const Graph = () => {
   return (
     <>
@@ -5,15 +7,20 @@ const Graph = () => {
         <div className="md:w-[80%] mx-auto flex flex-col-reverse md:flex-row justify-center items-start gap-12 md:gap-16">
           {/* left */}
           <div className=" w-full md:flex-1">
-            <div className="bg-[#113643] h-60 text-center rounded-md">
-              Add graph here
+            <div className=" h-60 text-center rounded-md">
+              <Image
+                src={graphImage}
+                height={500}
+                width={500}
+                alt="The Carbon Graph"
+              />
             </div>
           </div>
           {/* right */}
           <div className="flex-1">
             <div className="flex flex-col gap-8 items-center md:items-start">
               <h2 className="text-4xl">
-                The Carbon <sapn className="text-[#00BD57]">Graph</sapn>
+                The Carbon <span className="text-[#00BD57]">Graph</span>
               </h2>
               <h3 className="text-2xl text-center md:text-start">
                 Contrary to popular belief, Lorem Ipsum is not simply random
