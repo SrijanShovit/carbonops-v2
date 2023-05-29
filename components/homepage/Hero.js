@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
-import HeroImage from "../../public/images/homepage/hero.png";
+import HeroImage from "../../public/images/homepage/Hero.png";
 const Hero = () => {
   return (
     <>

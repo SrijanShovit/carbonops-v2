@@ -28,8 +28,8 @@ const SignupAs = () => {
                 <div className="text-center py-6 text-lg text-[#00BD57]">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard
+                    typesetting industry. Lorem Ipsum has been the industry
+                    &apos;s standard
                   </p>
                 </div>
                 <div className="pb-4">
@@ -59,8 +59,8 @@ const SignupAs = () => {
                 <div className="text-center py-6 text-lg text-[#00BD57]">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard
+                    typesetting industry. Lorem Ipsum has been the industry
+                    &apos;s standard
                   </p>
                 </div>
                 <div className="pb-4">
