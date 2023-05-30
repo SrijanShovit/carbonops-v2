@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;500&display=swap');
+  
+.page{
+    margin: auto;
+    font-family: 'poppins',sans-serif;
+    min-height: 100vh;
+    background-color: rgba(20, 36, 36, 1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.nav{
+    margin-top: 0px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.signup{
+    
+    margin-right: 50px;
+  }
+  .home{
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgba(0, 189, 87, 1);
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+.btn,.buttn{
+    background:rgba(0, 189, 87, 1);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: #66f108;
+}
+.grid1, .grid2{
+    display: flex;
+    top: 20vh;
+    height:50%;
+}
+.grid1 .content1 {
+    
+    width: 50%;
+    height: 100%;
+    object-fit:fill;
+    justify-content:center ;
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.content2{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: azure;
+    padding-top: 5%;
+    padding-left: 30px;
+    
+}
+.content2 .text{
+    width: 40%;
+    text-align: justify;
+    text-justify: inter-word;
+    width:80%;
+}
+.grid2{
+    border-radius: 10px;
+    background-color:rgba(145, 199, 182, 1) ;
+    margin: 40px;
+    height: 40vh;
+}
+
+.grid2 .block1{
+    
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 40%;
+    height:100%;
+
+}
+.grid2 .block2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.item p{
+    text-align: justify;
+    text-justify: inter-word;
+    width: 60%;
+    
+}
+.grid3{
+   position: relative;
+}
+.grid3 h1{
+    color: whitesmoke;  
+    padding-left: 40%;
+ }
+
+.grid3 .row1 {
+    margin: 10px;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.grid3 .row2{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col1{
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 20rem;
+}
+
+
+.about{
+
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+    color: azure;
+    background: rgba(196, 196, 196, 0.5);
+    width:100%;
+    font-weight: normal;
+}
+
+.bi:hover{
+    cursor: pointer;
+}
+
+.col1:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(68, 67, 67, 0.25) 0px 54px 55px,
+                rgba(94, 92, 92, 0.12) 0px -12px 30px,
+                rgba(146, 145, 145, 0.12) 0px 4px 6px, 
+                rgba(192, 190, 190, 0.17) 0px 12px 13px,
+                 rgba(224, 222, 222, 0.09) 0px -3px 5px;
+} 
+
+@media (max-width: 768px)
+{
+    .grid1{
+        display:contents;
+    }
+    .content1{
+        display: none;
+    }
+    .content2{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .content2 .text{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .item{
+        width: 100%;
+    }
+}
+
+.color{
+color: #00bd57;
+}
+
+.c1{
+color:black;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size:medium;
+}
+.gap1{
+    margin-top:4%;
+}
+.gap2{
+    margin-top:2%;
+}
+.h1{
+    font-size: 1.8rem;
+}

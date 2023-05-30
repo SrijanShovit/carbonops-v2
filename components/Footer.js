@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+
 const Footer = () => {
   return (
+    
     <>
       <div className="w-[100%] bg-[#12323f] py-12">
         <div className="md:w-[85%] mx-auto flex justify-between flex-col md:flex-row md:gap-12">
@@ -17,9 +20,9 @@ const Footer = () => {
           </div>
           <div className="md:w-1/4 flex flex-col justify-between items-center gap-4 mt-12 md:gap-[1.5rem]">
             <div>
-              <h2 className="text-3xl font-semibold text-[#00BD57]">
-                About Us
-              </h2>
+                <h2 className="text-3xl font-semibold text-[#00BD57] cursor-pointer ">
+                  About Us
+                  </h2>
             </div>
             <h3 className="text-lg">Copyright © Carbonops</h3>
           </div>
