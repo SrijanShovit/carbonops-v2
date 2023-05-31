@@ -85,6 +85,8 @@ All
  
 ## Setting up the project:
 
+We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great. Please note we have a [Code of Conduct](./CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+
 1. `git clone https://github.com/SrijanShovit/Carbonops-v2.git` 
 
 2. `cd ./Carbonops-v2`
