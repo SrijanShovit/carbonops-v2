@@ -87,9 +87,15 @@ All
 1. Fork this repoistory using Github GUI.
 2. Clone the project in your PC
 
+<<<<<<< HEAD
 ```
 git clone https://github.com/SrijanShovit/Carbonops-v2.git
 ```
+=======
+We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great. Please note we have a [Code of Conduct](./CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+
+1. `git clone https://github.com/SrijanShovit/Carbonops-v2.git` 
+>>>>>>> b189373cde3db4a27832f0fcbd63bb5e808bc586
 
 3. Change the directory to project's directory.
 
