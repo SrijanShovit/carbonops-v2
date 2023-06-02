@@ -9,7 +9,7 @@
   <br></div>
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SrijanShovit/Carbonops-v2?logo=github&style=for-the-badge)](https://github.com/SrijanShovit/) 
-[![GitHub last commit](https://img.shields.io/github/last-commit/gdscnitp/Environmental-Awareness-App?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/SrijanShovit/carbonops-v2?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
 [![GitHub stars](https://img.shields.io/github/stars/SrijanShovit/Carbonops-v2?style=for-the-badge)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
 [![My stars](https://img.shields.io/github/stars/SrijanShovit?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/SrijanShovit/Carbonops-v2?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/Carbonops-v2/network)
