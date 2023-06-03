@@ -9,7 +9,7 @@
   <br></div>
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SrijanShovit/Carbonops-v2?logo=github&style=for-the-badge)](https://github.com/SrijanShovit/) 
-[![GitHub last commit](https://img.shields.io/github/last-commit/gdscnitp/Environmental-Awareness-App?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/SrijanShovit/carbonops-v2?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
 [![GitHub stars](https://img.shields.io/github/stars/SrijanShovit/Carbonops-v2?style=for-the-badge)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
 [![My stars](https://img.shields.io/github/stars/SrijanShovit?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/SrijanShovit/Carbonops-v2?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/Carbonops-v2/network)
@@ -83,33 +83,44 @@ All
 
 
  
+We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great. Please note we have a [Code of Conduct](./CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 ## Setting up the project:
+1. Fork this repoistory using Github GUI.
+2. Clone the project in your PC
 
-1. `git clone https://github.com/SrijanShovit/Carbonops-v2.git` 
+3. Change the directory to project's directory.
 
-2. `cd ./Carbonops-v2`
+```
+cd ./Carbonops-v2
+```
 
-3. Install node dependencies 
-   - `npm install`
-   
-4. Set up a `.env` file 
+4. Install the dependencies
+
+```
+npm install
+```
+5. Set up a `.env` file 
    - Add relevant credentials in the .env file with the help of .env.example file.
 
-5. Start the server: `npm run dev`
+6. Start the development server
 
-6. Open http://localhost:3000 with your browser to see the app up and running 🎉🥳🎊.
+```
+npm run dev
+```
+7. Open http://localhost:3000 with your browser to see the app up and running 🎉🥳🎊.
 
+## Documentation:
 
 Having issues in understanding the codebase?
  
 Then head over to documentation, give yourself some time and please comeback to contribute.
-## Documentation:
 
-[Next.js](https://nextjs.org/docs)
+[Checkout the Next.js documentation here](https://nextjs.org/docs)
 
-[OAuth](https://oauth.net/getting-started/)
+[Checkout the Oauth documentation here](https://oauth.net/getting-started/)
 
 
-<h4>If you 💓 this, do smash the ⭐ button!!</h4>
+### If you 💓 the project, do smash the ⭐ button!!
 
-Thanks for visiting!!
+### Thanks for visiting!!
+![Thank You](public/gif/thankyou.gif)

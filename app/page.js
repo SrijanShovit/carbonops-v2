@@ -4,9 +4,11 @@ import Graph from "@/components/homepage/Graph";
 import Organizations from "@/components/homepage/Organizations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GoToTop from "@/components/GoToTop";
 export default function Home() {
   return (
     <div className="w-[95%] mx-auto">
+      <GoToTop/>
       <div>
         <Navbar />
       </div>
