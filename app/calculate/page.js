@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
 // import Link from "next/link";
-const Dashboard = () => {
+const Calculate = () => {
   return (
     <>
       <div className="w-full h-screen relative">
@@ -131,4 +131,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Calculate;
