@@ -48,7 +48,7 @@ const LoginPage = () => {
                       <input
                         name="email"
                         type="text"
-                        placeholder=""
+                        placeholder="email@example.com"
                         className="px-2 w-[20rem] bg-[#c7f9cc] focus:outline-none text-[#152023] rounded-sm"
                       />
                     </div>
@@ -59,7 +59,7 @@ const LoginPage = () => {
                       <input
                         name="password"
                         type="password"
-                        placeholder=""
+                        placeholder="Must have at least 8 characters"
                         className="px-2 w-[20rem] bg-[#c7f9cc] focus:outline-none text-[#152023] rounded-sm"
                       />
                     </div>
@@ -70,7 +70,7 @@ const LoginPage = () => {
                       <input
                         name="category"
                         type="text"
-                        placeholder=""
+                        placeholder="Individual/ Organization"
                         className="px-2 w-[20rem] bg-[#c7f9cc] focus:outline-none text-[#152023] rounded-sm"
                       />
                     </div>
