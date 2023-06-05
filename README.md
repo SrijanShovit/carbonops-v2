@@ -60,9 +60,9 @@ The site will have two portals:
 Wanna know how the flow of all records is being planned in the app?🤔
 Do have a look below
 ## Database ER diagram:
-![Env-awareness drawio](https://github.com/Manice18/carbonops-v2/assets/91601706/9027251f-8080-4a37-a7a1-e99c762b6e9e)
+![Database ER diagram](./ER_Diagram_Carbonops.png)
 
-
+[Click here](https://lucid.app/lucidchart/ccff0196-6408-437e-9210-d7a222d7c0e5/edit?viewport_loc=-322%2C-258%2C5376%2C2400%2C0_0&invitationId=inv_4c39b0f5-c7c4-4942-9740-5e5d83352291) to checkout the ER diagram.
 
 ## Target audiance: 
 All
