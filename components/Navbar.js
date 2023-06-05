@@ -39,8 +39,9 @@ const Navbar = () => {
               <Image
                 src="/../public/images/carbonops.png"
                 width={200}
-                height={200}
+                height={0}
                 alt="CarbonOps"
+                className="w-36 md:w-48"
               />
             </a>
             {/* Desktop Navmenu */}
