@@ -44,24 +44,24 @@ const Navbar = () => {
               />
             </a>
             {/* Desktop Navmenu */}
-            <nav className="hidden md:flex justify-center items-center gap-8">
+            <nav className="hidden md:flex  gap-8 md:absolute left-[45vw] ">
               <Link
-                href="/aboutus"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                href="/"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                About
+                Home
               </Link>
               <Link
-                href="/login"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                Login
+                Organisations
               </Link>
               <Link
-                href="/signup"
-                className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                Signup
+                Option
               </Link>
             </nav>
             {/* Hamburger button */}
@@ -81,22 +81,22 @@ const Navbar = () => {
               }
             >
               <Link
-                href="/aboutus"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                href="/"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                About
+                Home
               </Link>
               <Link
-                href="/login"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                Login
+                Organisations
               </Link>
               <Link
-                href="/signup"
-                className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                Signup
+                Option
               </Link>
             </nav>
           </div>
