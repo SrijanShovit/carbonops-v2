@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
+import { Style } from "@mui/icons-material";
+import styled from "styled-components";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -20,6 +22,26 @@ const Navbar = () => {
   };
   if (typeof window !== "undefined")
     window.addEventListener("scroll", changeNavColor);
+
+
+  // function for dark mode button
+  useEffect(() => {
+    const handleCheckboxChange = () => {
+      document.body.classList.toggle('dark');
+    };
+
+    const checkbox = document.getElementById("checkbox");
+    checkbox.addEventListener('change', handleCheckboxChange);
+
+    return () => {
+      checkbox.removeEventListener('change', handleCheckboxChange);
+    };
+  }, []);
+
+  // styling ball of dark mode button
+  const styles = {
+    fontSize: '30px',
+  };
 
   return (
     <>
@@ -57,6 +79,16 @@ const Navbar = () => {
               >
                 Signup
               </Link>
+
+              <div>
+                <input type="checkbox" class="checkbox" id="checkbox" />
+
+                <label htmlFor="checkbox" for="checkbox" class="label" >
+                  <i class="material-symbols-outlined moon">dark_mode</i>
+                  <i class="material-symbols-outlined sun"> clear_day</i>
+                  <div class="material-symbols-outlined  ball" style={styles}>circle</div>
+                </label>
+              </div>
             </nav>
             {/* Hamburger button */}
             <button

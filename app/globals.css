@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Floating animation for hero section text */
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -13,31 +14,91 @@
 }
 
 @keyframes floating {
-    0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-30px);
-      }
-      100% {
-        transform: translateY(0);
-      }
- }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Css for dark mode button */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  transition: 0.5s linear;
+}
+
+body.dark {
+  background-color: #050505;
+  color: white;
+}
+
+.label {
+  /* background-color:brown; */
+  background: #181717;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  position: relative;
+  height: 32px;
+  width: 73px;
+  padding: 3px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.moon {
+  color: yellow;
+  transition: 0.3s;
+}
+
+.sun {
+  color: yellow;
+  margin-left: 16px;
+  transition: 0.3s;
+}
+
+.ball {
+  color: white;
+  position: absolute;
+  transition: transform 0.3s linear;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+
+}
+
+.checkbox:checked+.label .ball {
+  transform: translate(38px);
+}
+
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: black;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:#00BD57; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background:green; 
-  }
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00BD57;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: green;
+}
