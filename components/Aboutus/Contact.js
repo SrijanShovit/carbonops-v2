@@ -3,11 +3,11 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='mb-[10vh] ' >
-        <div className='h-fit  border-2 mt-10 mx-[8vw] rounded-lg bg-green-400'>
-            <h2 className='p-4 text-2xl font-semibold text-black'>Who we are?</h2>
+        <div className='h-fit  border-2 mt-10 mx-[8vw] rounded-lg bg-[#00BD57]'>
+            <h2 className='p-4 text-2xl font-semibold text-white'>Who we are?</h2>
             <hr className='mx-4 mb-4 '/>
-            <p className='px-4 text-lg text-black'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi maxime reprehenderit enim deserunt dicta, tempora iusto quae. Optio impedit labore autem reprehenderit quam, perspiciatis, at ad explicabo repellendus nesciunt minus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nemo odit consequuntur explicabo provident quidem esse optio nam iusto voluptate labore, tenetur deserunt sed! Quia doloribus nihil maiores harum vero.</p>
-            <button className='text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm text-black rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out m-4'>Contact us</button>
+            <p className='px-4 text-lg text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi maxime reprehenderit enim deserunt dicta, tempora iusto quae. Optio impedit labore autem reprehenderit quam, perspiciatis, at ad explicabo repellendus nesciunt minus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nemo odit consequuntur explicabo provident quidem esse optio nam iusto voluptate labore, tenetur deserunt sed! Quia doloribus nihil maiores harum vero.</p>
+            <button className='text-lg bg-white py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm text-black rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out m-4'>Contact us</button>
         </div>
     </div>
   )
