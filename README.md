@@ -9,7 +9,7 @@
   <br></div>
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SrijanShovit/Carbonops-v2?logo=github&style=for-the-badge)](https://github.com/SrijanShovit/) 
-[![GitHub last commit](https://img.shields.io/github/last-commit/gdscnitp/Environmental-Awareness-App?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/SrijanShovit/carbonops-v2?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/) 
 [![GitHub stars](https://img.shields.io/github/stars/SrijanShovit/Carbonops-v2?style=for-the-badge)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
 [![My stars](https://img.shields.io/github/stars/SrijanShovit?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/SrijanShovit/Carbonops-v2/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/SrijanShovit/Carbonops-v2?style=for-the-badge&logo=git)](https://github.com/SrijanShovit/Carbonops-v2/network)
@@ -60,9 +60,9 @@ The site will have two portals:
 Wanna know how the flow of all records is being planned in the app?🤔
 Do have a look below
 ## Database ER diagram:
-![Env-awareness drawio](https://github.com/Manice18/carbonops-v2/assets/91601706/9027251f-8080-4a37-a7a1-e99c762b6e9e)
+![Database ER diagram](./ER_Diagram_Carbonops.png)
 
-
+[Click here](https://lucid.app/lucidchart/ccff0196-6408-437e-9210-d7a222d7c0e5/edit?viewport_loc=-322%2C-258%2C5376%2C2400%2C0_0&invitationId=inv_4c39b0f5-c7c4-4942-9740-5e5d83352291) to checkout the ER diagram.
 
 ## Target audiance: 
 All
@@ -73,7 +73,7 @@ All
 
 
 ## Languages and Tools:
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=512&id=cREyrHivHRHF&format=png" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://oauth.net/images/oauth-logo-square.png" alt="nextauthjs" width="40" height="40"/> </p> 
+<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=512&id=cREyrHivHRHF&format=png" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="nodejs" width="40" height="40"/> </a><a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/><a href="https://oauth.net/getting-started/" target="_blank" rel="noreferrer"> <img src="https://oauth.net/images/oauth-logo-square.png" alt="nextauthjs" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" arget="_blank" rel="noreferrer"> <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" width="40" height="40"/></a> </p> 
 
  
 
@@ -83,33 +83,46 @@ All
 
 
  
+We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great. Please note we have a [Code of Conduct](./CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 ## Setting up the project:
+This documentation contains set of guidelines to help you during the contribution process.
+[Contributing Guidelines](https://github.com/SrijanShovit/carbonops-v2/blob/main/CONTRIBUTING.md)
+1. Fork this repoistory using Github GUI.
+2. Clone the project in your PC
 
-1. `git clone https://github.com/SrijanShovit/Carbonops-v2.git` 
+3. Change the directory to project's directory.
 
-2. `cd ./Carbonops-v2`
+```
+cd ./Carbonops-v2
+```
 
-3. Install node dependencies 
-   - `npm install`
-   
-4. Set up a `.env` file 
+4. Install the dependencies
+
+```
+npm install
+```
+5. Set up a `.env` file 
    - Add relevant credentials in the .env file with the help of .env.example file.
 
-5. Start the server: `npm run dev`
+6. Start the development server
 
-6. Open http://localhost:3000 with your browser to see the app up and running 🎉🥳🎊.
+```
+npm run dev
+```
+7. Open http://localhost:3000 with your browser to see the app up and running 🎉🥳🎊.
 
+## Documentation:
 
 Having issues in understanding the codebase?
  
 Then head over to documentation, give yourself some time and please comeback to contribute.
-## Documentation:
 
-[Next.js](https://nextjs.org/docs)
+[Checkout the Next.js documentation here](https://nextjs.org/docs)
 
-[OAuth](https://oauth.net/getting-started/)
+[Checkout the Oauth documentation here](https://oauth.net/getting-started/)
 
 
-<h4>If you 💓 this, do smash the ⭐ button!!</h4>
+### If you 💓 the project, do smash the ⭐ button!!
 
-Thanks for visiting!!
+### Thanks for visiting!!
+![Thank You](public/gif/thankyou.gif)

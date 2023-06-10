@@ -1,0 +1,41 @@
+:root{
+  --color-1 : #54ccfa; 
+  --color-2 : #152023;
+  --color-3 : #184134;
+  --color-4 : #12323f;
+  --color-5 : #193b3e;
+  --color-6 : #9dab9d;
+  --color-7 : #113645;
+  --color-8 : #515b5f;
+  --color-9 : #123746;
+  --color-10 : #113643;
+  --color-11 : #53c6f2;
+  --color-12 : #10546f;
+  --color-13: #5a6568;
+  --color-14 : #348626;
+  --color-15 : #2d7d9f;
+  --color-16 : #0d516f;
+  --color-17 : #467d92;
+  --color-18 : #A7B543;
+  --color-19 : #183943;
+  --color-20 : #00BD57;
+
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange; 
+}
