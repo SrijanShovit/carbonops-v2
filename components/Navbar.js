@@ -46,19 +46,19 @@ const Navbar = () => {
             {/* Desktop Navmenu */}
             <nav className="hidden md:flex justify-center items-center gap-8">
               <Link
-                href="#"
+                href="/"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
                 HOME
               </Link>
               <Link
-                href="#"
+                href="/aboutus"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
                 ABOUT
               </Link>
               <Link
-                href="#"
+                href="/contactus"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
                 CONTACT US
@@ -93,19 +93,19 @@ const Navbar = () => {
               }
             >
               <Link
-                href="#"
+                href="/"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
                 HOME
               </Link>
               <Link
-                href="#"
+                href="/aboutus"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
                 ABOUT
               </Link>
               <Link
-                href="#"
+                href="/contactus"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
                 CONTACT US
