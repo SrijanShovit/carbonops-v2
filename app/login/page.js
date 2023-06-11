@@ -67,12 +67,23 @@ const LoginPage = () => {
                   </div>
                   <div className="flex flex-col-reverse items-start">
                     <div>
-                      <input
-                        name="category"
-                        type="text"
-                        placeholder="Individual/ Organization"
-                        className="px-2 w-[20rem] bg-[#c7f9cc] focus:outline-none text-[#152023] rounded-sm"
-                      />
+                      <label className="">
+                        <input
+                          type="radio"
+                          name="category"
+                          value="individual"
+                        />
+                        Individual
+                      </label>
+
+                      <label className="px-2">
+                        <input
+                          type="radio"
+                          name="category"
+                          value="organization"
+                        />
+                        Organization
+                      </label>
                     </div>
                     <label className="text-lg">Choose Category</label>
                   </div>
