@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
-    if (window.scrollY > 90) {
+    if (window.scrollY > 90) { 
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -46,10 +46,22 @@ const Navbar = () => {
             {/* Desktop Navmenu */}
             <nav className="hidden md:flex justify-center items-center gap-8">
               <Link
-                href="/aboutus"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                href="/"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
-                About
+                HOME
+              </Link>
+              <Link
+                href="/aboutus"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+              >
+                ABOUT
+              </Link>
+              <Link
+                href="/contactus"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+              >
+                CONTACT US
               </Link>
               <Link
                 href="/login"
@@ -81,10 +93,22 @@ const Navbar = () => {
               }
             >
               <Link
-                href="/aboutus"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                href="/"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
               >
-                About
+                HOME
+              </Link>
+              <Link
+                href="/aboutus"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+              >
+                ABOUT
+              </Link>
+              <Link
+                href="/contactus"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+              >
+                CONTACT US
               </Link>
               <Link
                 href="/login"
