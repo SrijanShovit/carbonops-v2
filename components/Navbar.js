@@ -51,7 +51,7 @@ const Navbar = () => {
           className={
             navColor
               ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023]"
+              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[transparent]"
           }
         >
           {/* Navmenu */}
