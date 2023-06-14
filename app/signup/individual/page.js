@@ -1,11 +1,30 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import welcomeImage from "../../../public/images/signup/welcome_img.png";
 import emailIcon from "../../../public/icons/email.png";
-import lockIcon from "../../../public/icons/lock.png";
 import phoneIcon from "../../../public/icons/phone.png";
 import cakeIcon from "../../../public/icons/cake.png";
 import Link from "next/link";
+import { FiEye, FiEyeOff } from "react-icons/fi";
+
 const IndividualSignup = () => {
+
+  const [passwordType, setPasswordType] = useState("password");
+  const [confirmPasswordType, setConfirmPasswordType] = useState("password");
+
+  const passwordToggle = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+    } else setPasswordType("password");
+  };
+
+  const confirmPasswordToggle = () => {
+    if (confirmPasswordType === "password") {
+      setConfirmPasswordType("text");
+    } else setConfirmPasswordType("password");
+  };
+
   return (
     <>
       <div className="text-lg w-full h-screen flex flex-col justify-center items-center my-16 md:my-0">
@@ -108,18 +127,25 @@ const IndividualSignup = () => {
                   <div className="flex flex-row border-b-2 border-slate-400 items-center">
                     <div>
                       <input
-                        type="password"
+                        type={passwordType}
                         placeholder="Password"
-                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
+                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
                       />
                     </div>
-                    <div>
+                    {/* <div>
                       <Image
-                        src={lockIcon}
-                        width={30}
-                        height={30}
-                        alt="Password"
+                      src={lockIcon}
+                      width={30}
+                      height={30}
+                      alt="Password"
                       />
+                    </div> */}
+                    <div
+                      onClick={passwordToggle}
+                      className="toggle-button"
+                      style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
+                      >
+                      {passwordType === "password" ? <FiEyeOff /> : <FiEye />}
                     </div>
                   </div>
                 </div>
@@ -128,18 +154,29 @@ const IndividualSignup = () => {
                   <div className="flex flex-row border-b-2 border-slate-400 items-center">
                     <div>
                       <input
-                        type="password"
+                        type={confirmPasswordType}
                         placeholder="Confirm Password"
-                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
+                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
                       />
                     </div>
-                    <div>
+                    {/* <div>
                       <Image
-                        src={lockIcon}
-                        width={30}
-                        height={30}
-                        alt="Confirm Password"
+                      src={lockIcon}
+                      width={30}
+                      height={30}
+                      alt="Confirm Password"
                       />
+                    </div> */}
+                      <div
+                          onClick={confirmPasswordToggle}
+                          className="toggle-button"
+                          style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
+                          >
+                          {confirmPasswordType === "password" ? (
+                            <FiEyeOff />
+                          ) : (
+                            <FiEye />
+                          )}
                     </div>
                   </div>
                 </div>
