@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
-    if (window.scrollY > 90) { 
+    if (window.scrollY > 90) {
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
     window.addEventListener("scroll", changeNavColor);
 
 
-  // function for dark mode button
+  // function for dark mode button (Desktop)
   useEffect(() => {
     const handleCheckboxChange = () => {
       document.body.classList.toggle('dark');
@@ -37,6 +37,37 @@ const Navbar = () => {
       checkbox.removeEventListener('change', handleCheckboxChange);
     };
   }, []);
+
+
+  // function for dark mode button 2(Mobile)
+  useEffect(() => {
+    const body = document.querySelector('body');
+    const handleCheckboxChange1 = () => {
+      this.classList.toggle('bi-moon');
+      if(this.classList.toggle('bi-brightness-high-fill')){
+          body.style.background = 'white';
+          body.style.color = 'black';
+          body.style.transition = '2s';
+      }else{
+          body.style.background = 'black';
+          body.style.color = 'white';
+          body.style.transition = '2s';
+      }
+    };
+
+    const toggle = document.getElementById('toggleDark');
+    toggle.addEventListener('change', handleCheckboxChange1);
+
+    return () => {
+      toggle.removeEventListener('change', handleCheckboxChange1);
+    };
+  }, []);
+
+
+ 
+  
+ 
+
 
   // styling ball of dark mode button
   const styles = {
@@ -100,8 +131,7 @@ const Navbar = () => {
 
               <div>
                 <input type="checkbox" class="checkbox" id="checkbox" />
-
-                <label htmlFor="checkbox" for="checkbox" class="label" >
+                <label for="checkbox" class="label" >
                   <i class="material-symbols-outlined moon">dark_mode</i>
                   <i class="material-symbols-outlined sun"> clear_day</i>
                   <div class="material-symbols-outlined  ball" style={styles}>circle</div>
@@ -120,10 +150,12 @@ const Navbar = () => {
             <nav
               className={
                 !nav
-                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-8 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
+                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-20 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
                   : "hidden"
               }
             >
+              <i1 class="bi bi-brightness-high-fill" id="toggleDark"></i1>
+
               <Link
                 href="/"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"

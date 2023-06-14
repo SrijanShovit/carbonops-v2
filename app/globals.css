@@ -84,6 +84,17 @@ body.dark {
   transform: translate(38px);
 }
 
+
+
+i1{
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-0%, -109%);
+}
+
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
