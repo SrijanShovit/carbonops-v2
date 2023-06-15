@@ -3,10 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
-import { useSession, signOut } from 'next-auth/react'
 
 const Navbar = () => {
-  const { data: session } = useSession()
   const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
@@ -14,7 +12,7 @@ const Navbar = () => {
 
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
-    if (window.scrollY > 90) { 
+    if (window.scrollY > 90) {
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -22,9 +20,6 @@ const Navbar = () => {
   };
   if (typeof window !== "undefined")
     window.addEventListener("scroll", changeNavColor);
-
-
-
 
   return (
     <>
@@ -49,46 +44,25 @@ const Navbar = () => {
               />
             </a>
             {/* Desktop Navmenu */}
-            <nav className="hidden md:flex justify-center items-center gap-8">
-
+            <nav className="hidden md:flex  gap-8 md:absolute left-[45vw] ">
               <Link
                 href="/"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                HOME
+                Home
               </Link>
               <Link
-                href="/aboutus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                ABOUT
+                Organisations
               </Link>
               <Link
-                href="/contactus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                CONTACT US
+                Option
               </Link>
-
-          { session ?<><button
-              onClick={()=>signOut('google')}
-              className="text-lg hover:text-[#00BD57] ease-out duration-200"
-            >
-              Logout
-            </button>
-          </>: <><Link
-              href="/login"
-              className="text-lg hover:text-[#00BD57] ease-out duration-200"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
-            >
-              Signup
-            </Link></>}
-
             </nav>
             {/* Hamburger button */}
             <button
@@ -108,33 +82,21 @@ const Navbar = () => {
             >
               <Link
                 href="/"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                HOME
+                Home
               </Link>
               <Link
-                href="/aboutus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                ABOUT
+                Organisations
               </Link>
               <Link
-                href="/contactus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                href="#"
+                className="text-xl hover:text-[#00BD57] text-gray-400  ease-out duration-200"
               >
-                CONTACT US
-              </Link>
-              <Link
-                href="/login"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
-              >
-                Login
-              </Link>
-              <Link
-                href="/signup"
-                className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
-              >
-                Signup
+                Option
               </Link>
             </nav>
           </div>

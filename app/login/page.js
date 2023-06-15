@@ -1,16 +1,26 @@
-'use client'
-import React,{useState,useEffect} from 'react'
-import Image from 'next/image'
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import EnvironmentImage from "../../public/images/login/Environment.png";
 import { signIn } from 'next-auth/react'
-import EnvironmentImage from '../../public/images/login/Environment.png'
-import Link from 'next/link'
+import Link from "next/link";
+import { FiEye, FiEyeOff } from "react-icons/fi";
+import emailIcon from "../../public/icons/email.png";
 import { useRouter} from 'next/navigation'
 
 const LoginPage = () => {
+  const [passwordType, setPasswordType] = useState("password");
 
-    const handleGoogleSignIn = async () => {
+  const passwordToggle = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+    } else setPasswordType("password");
+  };
+   const handleGoogleSignIn = async () => {
       await signIn('google')
     }
+
+
   return (
 
       <> <div className='text-lg w-full h-screen flex flex-col justify-center items-center my-16 md:my-0'>
@@ -52,27 +62,40 @@ const LoginPage = () => {
               {/* Input fields Container*/}
               <div className='flex flex-col justify-between items-center md:items-start gap-6 text-[#dee2e6] mt-4'>
                 <div>
-                  <div className='flex flex-col-reverse items-start pb-4'>
+                  <div className="flex flex-row border-b-2 border-slate-400 items-center mb-5">
                     <div>
                       <input
-                        name='email'
-                        type='text'
-                        placeholder='email@example.com'
-                        className='px-2 w-[20rem] bg-[#c7f9cc] focus:outline-none text-[#152023] rounded-sm'
+                        type="text"
+                        placeholder="Email"
+                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
                       />
                     </div>
-                    <label className='text-lg'>Email</label>
+                    <div>
+                      <Image
+                        src={emailIcon}
+                        width={27}
+                        height={27}
+                        alt="Email"
+                      />
+                    </div>
+                </div>
+                  <div>
+                  <div className="flex flex-row border-b-2 border-slate-400 items-center mb-8">
+                    <div>
+                      <input
+                        type={passwordType}
+                        placeholder="Password"
+                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
+                      />
+                    </div>
+                    <div
+                      onClick={passwordToggle}
+                      className="toggle-button"
+                      style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
+                      >
+                      {passwordType === "password" ? <FiEyeOff /> : <FiEye />}
+                    </div>
                   </div>
-                  <div className='flex flex-col-reverse items-start pb-4'>
-                    <div>
-                      <input
-                        name='password'
-                        type='password'
-                        placeholder='Must have at least 8 characters'
-                        className='px-2 w-[20rem] bg-[#c7f9cc] focus:outline-none text-[#152023] rounded-sm'
-                      />
-                    </div>
-                    <label className='text-lg'>Password</label>
                   </div>
                   <div className='flex flex-col-reverse items-start'>
                     <div>
