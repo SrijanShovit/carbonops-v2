@@ -1,34 +1,40 @@
 const mongoose = require("mongoose");
 const IndividualProfileCompletionSchema = mongoose.Schema({
-  individual_mongodb_id: {
+  individual_MongodbId: {
     required: true,
     type: String,
   },
-  profile_image: {
+  profileImage: {
     type: String,
+    trim: true,
   },
   dob: {
     required: true,
     type: String,
+    trim: true,
   },
   city: {
     required: true,
     type: String,
+    trim: true,
   },
   occupation_type: {
     required: true,
     type: String,
+    trim: true,
   },
-  social_media_links: {
+  socialMediaLinks: {
     required: true,
     type: String,
+    trim: true,
   },
   address: {
     required: true,
     type: String,
+    trim: true,
   },
 });
-const IndividualProfileCompletionModel= mongoose.model(
+const IndividualProfileCompletionModel = mongoose.model(
   "individualProfileCompletion",
   IndividualProfileCompletionSchema
 );

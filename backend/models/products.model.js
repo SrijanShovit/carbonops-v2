@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 const ProductSchema = mongoose.Schema({
-    product_id:{
+    productd:{
         type:String,
         required:true
     },
-    organization_id:{
+    organizationd:{
         type:String,
         required:true
     },
-    product_name:{
+    productName:{
         type:String,
         required:true
     },
@@ -16,19 +16,19 @@ const ProductSchema = mongoose.Schema({
         type:Number,
         required:true
     },
-    product_description:{
+    productDescription:{
         type:String,
         required:true
     },
-    product_rating:{
+    productRating:{
         type:Number,
         required:true
     },
-    stock_utls:{
+    stockUtls:{
         type:Number,
         required:false
     },
-    product_uri:{
+    productUri:{
         type:String,
         required:false
     }

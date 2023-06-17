@@ -1,28 +1,33 @@
 const mongoose = require('mongoose');
 const EventRegisteredSchema = mongoose.Schema({
-    reg_id:{
+    regId:{
         type:String,
         required:true
     },
-    individual_id:{
+    individualId:{
         type:String,
         required:true
     },
-    event_id:{
+    eventId:{
         type:String,
         required:true
     },
     name:{
         type:String,
-        required:true
+        required:true,
+        trim:true
     },
-    email_id:{
+    emailId:{
         type:String,
-        required:true
+        required:true,
+        validate: [validateEmail, 'Please fill a valid email address'],
+        trim:true
     },
-    phone_no:{
+    phoneNo:{
         type:String,
-        required:true
+        required:true,
+        trim:true
+
     },
     isOffline:{
         type:Boolean,
