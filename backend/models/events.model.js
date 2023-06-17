@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const {isURL} = require("validator");
 const EventTypesSchema = mongoose.Schema({
   online: {
     required: true,
@@ -40,6 +41,8 @@ const EventDetailsSchema = mongoose.Schema({
     validate: [ isURL, 'Please provide a valid Url' ]
   },
 });
+
+
 const EventSchema = mongoose.Schema({
   eventId: {
     required: true,
