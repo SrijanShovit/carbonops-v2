@@ -1,15 +1,13 @@
 const mongoose = require("mongoose");
-var db = "mongodb://localhost:27017/carbonops";
-
+require('dotenv').config();
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(process.env.URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       //useCreateIndex: true,
       //useFindAndModify: false,
     });
-    console.log("MongoDB Connected");
   } catch (err) {
     console.log(err);
   }

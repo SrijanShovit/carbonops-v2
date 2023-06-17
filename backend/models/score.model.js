@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ScoreSchmea=mongoose.Schema(
     {
-        scores_id:{
+        scoresId:{
             required: true,
             type: String
         },

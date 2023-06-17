@@ -4,44 +4,55 @@ const Address = mongoose.Schema({
   city: {
     required: true,
     type: String,
+    trim:true
+
   },
   state: {
     required: true,
     type: String,
+    trim:true
   },
   pincode: {
     required: true,
     type: String,
+    trim:true
   },
   nation: {
     required: true,
     type: String,
+    trim:true
   },
 });
 const OrganozationProfileCompletionSchema = mongoose.Schema({
-  organization_id_mongoID: {
+  organizationId_mongoID: {
     required: true,
     type: String,
+    trim:true
   },
-  organization_id: {
+  organizationId: {
     required: true,
     type: String,
+    trim:true
   },
-  organization_name: {
+  organizationName: {
     required: true,
     type: String,
+    trim:true
   },
   email: {
     required: true,
     type: String,
+    trim:true
   },
   password: {
     required: true,
     type: String,
+    trim:true
   },
   contact_number: {
     required: true,
     type: String,
+    trim:true
   },
   location: {
     required: true,
@@ -50,22 +61,27 @@ const OrganozationProfileCompletionSchema = mongoose.Schema({
   waste_requirements: {
     required: true,
     type: String,
+    trim:true
   },
-  product_deals: {
+  productDeals: {
     required: true,
     type: String,
+    trim:true
   },
-  social_media_links: {
+  socialMediaLinks: {
     required: true,
     type: String,
+    trim:true
   },
-  website_link: {
+  websiteLink: {
     required: true,
     type: String,
+    trim:true
   },
-  type_of_organization: {
+  typeOfOrganization: {
     required: true,
     type: String,
+    trim:true,
     enum:['Cooperative','Private','Self help groups']
   },
 });
