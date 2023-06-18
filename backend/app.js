@@ -9,7 +9,6 @@ app.get('/',(req,res) => {
 const UseRouter=require('./routers/example.routes')
 app.use(express.json());
 app.use("/ping",UseRouter)
-console.log("jhhjb")
 app.listen(3000,()=>{
     console.log('server is running');
     
