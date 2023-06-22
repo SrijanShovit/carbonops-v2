@@ -37,38 +37,6 @@ const Navbar = () => {
       checkbox.removeEventListener('change', handleCheckboxChange);
     };
   }, []);
-
-
-  // function for dark mode button 2(Mobile)
-  useEffect(() => {
-    const body = document.querySelector('body');
-    const handleCheckboxChange1 = () => {
-      this.classList.toggle('bi-moon');
-      if(this.classList.toggle('bi-brightness-high-fill')){
-          body.style.background = 'white';
-          body.style.color = 'black';
-          body.style.transition = '2s';
-      }else{
-          body.style.background = 'black';
-          body.style.color = 'white';
-          body.style.transition = '2s';
-      }
-    };
-
-    const toggle = document.getElementById('toggleDark');
-    toggle.addEventListener('change', handleCheckboxChange1);
-
-    return () => {
-      toggle.removeEventListener('change', handleCheckboxChange1);
-    };
-  }, []);
-
-
- 
-  
- 
-
-
   // styling ball of dark mode button
   const styles = {
     fontSize: '30px',
