@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import HeroImage from "../../public/images/homepage/Hero.png";
+
 const Hero = () => {
   return (
     <>
       <div className="mt-20 md:mt-[12rem] w-[90%] mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-4">
-        <div className="md:w-[40%]">
+        <div className="md:w-[40%] floating">
           <div className="flex flex-col justify-center md:items-start items-center gap-2">
             <h2 className="text-center md:text-start text-4xl">
               A place to <span className="text-[#54ccfa]">calculate</span> and
@@ -26,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <Image
+          <Image className="animate__animated animate__zoomIn  animation-duration: 3s; animate__slow"
             src={HeroImage}
             width={600}
             height={600}
