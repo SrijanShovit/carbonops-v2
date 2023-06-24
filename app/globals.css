@@ -27,6 +27,10 @@
   }
 }
 
+ header{
+  z-index: 100;
+ }
+
 /* Css for dark mode button */
 * {
   box-sizing: border-box;
