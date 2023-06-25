@@ -1,10 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import EnvironmentImage from "../../public/images/login/Environment.png";
 import Link from "next/link";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import emailIcon from "../../public/icons/email.png";
 
 const LoginPage = () => {
   const [passwordType, setPasswordType] = useState("password");
@@ -23,7 +21,7 @@ const LoginPage = () => {
             <div className="w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4">
               <div>
                 <Image
-                  src={EnvironmentImage}
+                  src={"/images/login/Environment.png"}
                   height={500}
                   width={500}
                   alt="Welcome to Carbonops"
@@ -65,30 +63,36 @@ const LoginPage = () => {
                     </div>
                     <div>
                       <Image
-                        src={emailIcon}
+                        src={"/icons/email.png"}
                         width={27}
                         height={27}
                         alt="Email"
                       />
                     </div>
-                </div>
-                  <div>
-                  <div className="flex flex-row border-b-2 border-slate-400 items-center mb-8">
-                    <div>
-                      <input
-                        type={passwordType}
-                        placeholder="Password"
-                        className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
-                      />
-                    </div>
-                    <div
-                      onClick={passwordToggle}
-                      className="toggle-button"
-                      style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
-                      >
-                      {passwordType === "password" ? <FiEyeOff /> : <FiEye />}
-                    </div>
                   </div>
+                  <div>
+                    <div className="flex flex-row border-b-2 border-slate-400 items-center mb-8">
+                      <div>
+                        <input
+                          type={passwordType}
+                          placeholder="Password"
+                          className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
+                        />
+                      </div>
+                      <div
+                        onClick={passwordToggle}
+                        className="toggle-button"
+                        style={{
+                          paddingTop: 5,
+                          width: 30,
+                          height: 30,
+                          color: "#6B717F",
+                          marginLeft: 5,
+                        }}
+                      >
+                        {passwordType === "password" ? <FiEyeOff /> : <FiEye />}
+                      </div>
+                    </div>
                   </div>
                   <div className="flex flex-col-reverse items-start">
                     <div>

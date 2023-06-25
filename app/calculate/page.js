@@ -1,4 +1,3 @@
-import Logo from "../../public/images/Carbonops.png";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -10,7 +9,12 @@ const Calculate = () => {
         {/* Nav */}
         <div className="w-full flex justify-between items-center px-6 md:px-12 py-4">
           <div>
-            <Image src={Logo} height={200} width={200} alt="Carbonops" />
+            <Image
+              src={"/images/Carbonops.png"}
+              height={200}
+              width={200}
+              alt="Carbonops"
+            />
           </div>
           <h2 className="text-xl font-semibold">Dashboard</h2>
         </div>

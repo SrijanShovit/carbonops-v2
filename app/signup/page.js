@@ -1,8 +1,6 @@
 import Card from "@/components/signup/Card";
 import Image from "next/image";
 import Link from "next/link";
-import CardImageLeft from "../../public/images/signup/individual.png";
-import CardImageRight from "../../public/images/signup/organizations.png";
 const SignupAs = () => {
   return (
     <>
@@ -17,7 +15,7 @@ const SignupAs = () => {
             <div className="flex flex-col justify-between items-center py-4">
               <div className="py-0">
                 <Image
-                  src={CardImageLeft}
+                  src={"/images/signup/individual.png"}
                   height={350}
                   width={320}
                   alt="Individual image"
@@ -48,7 +46,7 @@ const SignupAs = () => {
             <div className="flex flex-col justify-between items-center py-4">
               <div className="py-0 ">
                 <Image
-                  src={CardImageRight}
+                  src={"/images/signup/organizations.png"}
                   height={350}
                   width={320}
                   alt="Organization Image"
