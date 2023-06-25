@@ -41,7 +41,7 @@ const LoginPage = () => {
               </div>
             </div>
             <div className="mt-8 md:mt-0 w-full flex flex-col justify-between items-center gap-2">
-              <div>
+                <div>
                 <h1 className="text-3xl md:text-4xl font-bold text-[#00bd57]">
                   LOGIN TO OUR PLATFORM
                 </h1>
@@ -127,12 +127,13 @@ const LoginPage = () => {
                   </div>
                 </div>
                 <div className="mx-auto">
+                  <Link href="/myprofile">
                   <button
-                    href="/signup"
                     className="text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
                   >
                     Login
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
