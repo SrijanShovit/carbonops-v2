@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
+import Link from "next/link";
+
+
+
 const Hero = () => {
   return (
     <>
@@ -16,12 +20,14 @@ const Hero = () => {
             </h1>
             <button className="text-lg md:text-xl bg-[#00BD57] py-0 md:py-1 px-4 md:px-auto rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out">
               {/* Desktop Image */}
+              <Link href="/calculate">
               <div className="p-2 flex justify-between items-center gap-2 md:gap-2">
                 <p>Calculate Now</p>
                 <div className="text-lg">
                   <BsArrowRight />
                 </div>
               </div>
+              </Link>
             </button>
           </div>
         </div>
