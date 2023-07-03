@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
-import HeroImage from "../../public/images/homepage/Hero.png";
 
 import Link from "next/link";
 
@@ -34,7 +33,7 @@ const Hero = () => {
         </div>
         <div>
           <Image className="animate__animated animate__zoomIn  animation-duration: 3s; animate__slow"
-            src={HeroImage}
+            src={"/images/homepage/Hero.png"}
             width={600}
             height={600}
             alt="Carbonops hero image"

@@ -33,8 +33,8 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023]"
+              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200 z-50"
+              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023] z-50"
           }
         >
           {/* Navmenu */}
@@ -42,7 +42,7 @@ const Navbar = () => {
             <a href="#home">
               {/* <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1> */}
               <Image
-                src="/../public/images/Carbonops.png"
+                src="/images/Carbonops.png"
                 width={200}
                 height={200}
                 alt="CarbonOps"
