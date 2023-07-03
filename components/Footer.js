@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="md:w-1/4 flex flex-col justify-between items-center gap-4 md:gap-[1.5rem]">
             <div>
               <Image
-                src="/../public/images/Carbonops.png"
+                src="/images/Carbonops.png"
                 width={280}
                 height={280}
                 alt="Carbonops"
@@ -36,7 +36,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <Image
-                  src="/../public/images/footer/Google.png"
+                  src="/images/footer/Google.png"
                   width={35}
                   height={35}
                   alt="Carbonops Google"
@@ -48,7 +48,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <Image
-                  src="/../public/images/footer/Facebook.png"
+                  src="/images/footer/Facebook.png"
                   width={35}
                   height={35}
                   alt="Carbonops Facebook"
@@ -60,7 +60,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <Image
-                  src="/../public/images/footer/Twitter.png"
+                  src="/images/footer/Twitter.png"
                   width={35}
                   height={35}
                   alt="Carbonops Twitter"

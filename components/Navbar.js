@@ -3,8 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
+import { useSession, signOut } from 'next-auth/react'
 
 const Navbar = () => {
+  const { data: session } = useSession()
   const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
@@ -21,6 +23,9 @@ const Navbar = () => {
   if (typeof window !== "undefined")
     window.addEventListener("scroll", changeNavColor);
 
+
+
+
   return (
     <>
       <main className="text-white">
@@ -28,8 +33,8 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023]"
+              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200 z-50"
+              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023] z-50"
           }
         >
           {/* Navmenu */}
@@ -37,7 +42,7 @@ const Navbar = () => {
             <a href="#home">
               {/* <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1> */}
               <Image
-                src="/../public/images/Carbonops.png"
+                src="/images/Carbonops.png"
                 width={200}
                 height={200}
                 alt="CarbonOps"
@@ -45,6 +50,7 @@ const Navbar = () => {
             </a>
             {/* Desktop Navmenu */}
             <nav className="hidden md:flex justify-center items-center gap-8">
+
               <Link
                 href="/"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
@@ -63,18 +69,26 @@ const Navbar = () => {
               >
                 CONTACT US
               </Link>
-              <Link
-                href="/login"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
-              >
-                Login
-              </Link>
-              <Link
-                href="/signup"
-                className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
-              >
-                Signup
-              </Link>
+
+          { session ?<><button
+              onClick={()=>signOut('google')}
+              className="text-lg hover:text-[#00BD57] ease-out duration-200"
+            >
+              Logout
+            </button>
+          </>: <><Link
+              href="/login"
+              className="text-lg hover:text-[#00BD57] ease-out duration-200"
+            >
+              Login
+            </Link>
+            <Link
+              href="/signup"
+              className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+            >
+              Signup
+            </Link></>}
+
             </nav>
             {/* Hamburger button */}
             <button

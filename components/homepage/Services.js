@@ -1,6 +1,4 @@
 import Image from "next/image";
-import serviceImage1 from "../../public/images/homepage/service-1.png";
-import serviceImage2 from "../../public/images/homepage/Interview.png";
 const Services = () => {
   return (
     <>
@@ -17,7 +15,7 @@ const Services = () => {
           <div className="flex-1 flex flex-col items-center justify-between">
             <div>
               <Image
-                src={serviceImage1}
+                src={"/images/homepage/service-1.png"}
                 width={330}
                 height={330}
                 alt="Services"
@@ -35,7 +33,7 @@ const Services = () => {
           <div className="flex-1 flex flex-col items-center justify-between">
             <div>
               <Image
-                src={serviceImage2}
+                src={"/images/homepage/Interview.png"}
                 width={330}
                 height={330}
                 alt="Interview"
