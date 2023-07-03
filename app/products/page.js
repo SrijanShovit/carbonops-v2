@@ -45,7 +45,12 @@ const page = () => {
             <div className="mt-4">
               <div className="w-[85%] mx-auto bg-[#12323f] flex flex-col sm:flex-row justify-between  sm:justify-between items-center gap-2 sm:px-4 py-2">
                 <div className="sm:flex-1">
-                  <Image src={sampleImg} height={300} width={300} />
+                  <Image
+                    src={sampleImg}
+                    height={300}
+                    width={300}
+                    alt="sample img"
+                  />
                 </div>
                 {/* products card component */}
                 <div className="sm:flex-1 flex flex-col items-start justify-between text-center sm:text-left px-6 sm:px-0 gap-6">
@@ -57,11 +62,36 @@ const page = () => {
                   <div>
                     <div className="hidden sm:flex justify-between items-center gap-12">
                       <div className="flex flex-row justify-between items-center">
-                        <Image src={yellowStar} height={25} width={25} />
-                        <Image src={yellowStar} height={25} width={25} />
-                        <Image src={yellowStar} height={25} width={25} />
-                        <Image src={yellowStar} height={25} width={25} />
-                        <Image src={grayStar} height={25} width={25} />
+                        <Image
+                          src={yellowStar}
+                          height={25}
+                          width={25}
+                          alt="star"
+                        />
+                        <Image
+                          src={yellowStar}
+                          height={25}
+                          width={25}
+                          alt="star"
+                        />
+                        <Image
+                          src={yellowStar}
+                          height={25}
+                          width={25}
+                          alt="star"
+                        />
+                        <Image
+                          src={yellowStar}
+                          height={25}
+                          width={25}
+                          alt="star"
+                        />
+                        <Image
+                          src={grayStar}
+                          height={25}
+                          width={25}
+                          alt="star"
+                        />
                       </div>
                       <div className="text-orange-400">{product.price}</div>
                     </div>
@@ -90,11 +120,31 @@ const page = () => {
                 <div className="sm:hidden">
                   <div className="w-[20rem] flex justify-between items-center">
                     <div className="flex flex-row justify-between items-center">
-                      <Image src={yellowStar} height={25} width={25} />
-                      <Image src={yellowStar} height={25} width={25} />
-                      <Image src={yellowStar} height={25} width={25} />
-                      <Image src={yellowStar} height={25} width={25} />
-                      <Image src={grayStar} height={25} width={25} />
+                      <Image
+                        src={yellowStar}
+                        height={25}
+                        width={25}
+                        alt="star"
+                      />
+                      <Image
+                        src={yellowStar}
+                        height={25}
+                        width={25}
+                        alt="star"
+                      />
+                      <Image
+                        src={yellowStar}
+                        height={25}
+                        width={25}
+                        alt="star"
+                      />
+                      <Image
+                        src={yellowStar}
+                        height={25}
+                        width={25}
+                        alt="star"
+                      />
+                      <Image src={grayStar} height={25} width={25} alt="star" />
                     </div>
                     <div className="text-orange-400">{product.price}</div>
                   </div>
