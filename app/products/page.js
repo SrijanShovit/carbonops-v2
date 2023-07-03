@@ -12,21 +12,21 @@ const page = () => {
       productName: "Product Name 1",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis qui accusamus odit similique, expedita velit at cupiditate dolor iure? Laboriosam repudiandae quod pariatur necessitatibus expedita repellendus quidem cum repellat?",
-      price: "$100",
+      price: "₹100",
     },
     {
       image: sampleImg,
       productName: "Product Name 2",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis qui accusamus odit similique, expedita velit at cupiditate dolor iure? Laboriosam repudiandae quod pariatur necessitatibus expedita repellendus quidem cum repellat?",
-      price: "$150",
+      price: "₹150",
     },
     {
       image: sampleImg,
       productName: "Product Name 3",
       description:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis qui accusamus odit similique, expedita velit at cupiditate dolor iure? Laboriosam repudiandae quod pariatur necessitatibus expedita repellendus quidem cum repellat?",
-      price: "$1200",
+      price: "₹1200",
     },
   ];
 
