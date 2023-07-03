@@ -55,7 +55,7 @@ const Navbar = () => {
             <a href="#home">
               {/* <h1 className="text-2xl md:text-3xl z-10">CARBON-OPS</h1> */}
               <Image
-                src="/../public/images/Carbonops.png"
+                src="/images/Carbonops.png"
                 width={200}
                 height={200}
                 alt="CarbonOps"

@@ -1,10 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import welcomeImage from "../../../public/images/signup/welcome_img.png";
-import emailIcon from "../../../public/icons/email.png";
-import phoneIcon from "../../../public/icons/phone.png";
-import cakeIcon from "../../../public/icons/cake.png";
 import Link from "next/link";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
@@ -33,7 +29,7 @@ const IndividualSignup = () => {
             <div className="w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4">
               <div>
                 <Image
-                  src={welcomeImage}
+                  src={"/images/signup/welcome_img.png"}
                   height={500}
                   width={500}
                   alt="Welcome to Carbonops"
@@ -74,7 +70,7 @@ const IndividualSignup = () => {
                     </div>
                     <div>
                       <Image
-                        src={emailIcon}
+                        src={"/icons/email.png"}
                         width={30}
                         height={30}
                         alt="Email"
@@ -94,7 +90,7 @@ const IndividualSignup = () => {
                     </div>
                     <div>
                       <Image
-                        src={phoneIcon}
+                        src={"/icons/phone.png"}
                         width={30}
                         height={30}
                         alt="Contact"
@@ -114,7 +110,7 @@ const IndividualSignup = () => {
                     </div>
                     <div>
                       <Image
-                        src={cakeIcon}
+                        src={"/icons/cake.png"}
                         width={30}
                         height={30}
                         alt="Date of Birth"
@@ -143,8 +139,14 @@ const IndividualSignup = () => {
                     <div
                       onClick={passwordToggle}
                       className="toggle-button"
-                      style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
-                      >
+                      style={{
+                        paddingTop: 5,
+                        width: 30,
+                        height: 30,
+                        color: "#6B717F",
+                        marginLeft: 5,
+                      }}
+                    >
                       {passwordType === "password" ? <FiEyeOff /> : <FiEye />}
                     </div>
                   </div>
@@ -167,16 +169,22 @@ const IndividualSignup = () => {
                       alt="Confirm Password"
                       />
                     </div> */}
-                      <div
-                          onClick={confirmPasswordToggle}
-                          className="toggle-button"
-                          style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
-                          >
-                          {confirmPasswordType === "password" ? (
-                            <FiEyeOff />
-                          ) : (
-                            <FiEye />
-                          )}
+                    <div
+                      onClick={confirmPasswordToggle}
+                      className="toggle-button"
+                      style={{
+                        paddingTop: 5,
+                        width: 30,
+                        height: 30,
+                        color: "#6B717F",
+                        marginLeft: 5,
+                      }}
+                    >
+                      {confirmPasswordType === "password" ? (
+                        <FiEyeOff />
+                      ) : (
+                        <FiEye />
+                      )}
                     </div>
                   </div>
                 </div>

@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
-import BannerImg from "../../public/images/signup/welcome_img.png";
 const Banner = () => {
   return (
     <>
       <div className="mt-20 md:mt-[20vh] w-[100%] mx-auto flex flex-col-reverse md:flex-row justify-center items-center gap-10">
         <div>
           <Image
-            src={BannerImg}
+            src={"/images/signup/welcome_img.png"}
             width={400}
             height={400}
             alt="Carbonops hero image"

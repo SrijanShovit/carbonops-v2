@@ -1,4 +1,3 @@
-import graphImage from "../../public/images/homepage/graph.png";
 import Image from "next/image";
 const Graph = () => {
   return (
@@ -9,7 +8,7 @@ const Graph = () => {
           <div className=" w-full md:flex-1">
             <div className=" h-60 text-center rounded-md">
               <Image
-                src={graphImage}
+                src={"/images/homepage/graph.png"}
                 height={500}
                 width={500}
                 alt="The Carbon Graph"
