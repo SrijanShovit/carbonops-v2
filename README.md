@@ -64,7 +64,7 @@ Do have a look below
 
 [Click here](https://lucid.app/lucidchart/ccff0196-6408-437e-9210-d7a222d7c0e5/edit?viewport_loc=-322%2C-258%2C5376%2C2400%2C0_0&invitationId=inv_4c39b0f5-c7c4-4942-9740-5e5d83352291) to checkout the ER diagram.
 
-## Target audiance: 
+## Target audience: 
 All
 
 ## Project constraints:
@@ -87,7 +87,7 @@ We're thrilled that you'd like to contribute to this project. Your help is essen
 ## Setting up the project:
 This documentation contains set of guidelines to help you during the contribution process.
 [Contributing Guidelines](https://github.com/SrijanShovit/carbonops-v2/blob/main/CONTRIBUTING.md)
-1. Fork this repoistory using Github GUI.
+1. Fork this repository using Github GUI.
 2. Clone the project in your PC
 
 3. Change the directory to project's directory.
