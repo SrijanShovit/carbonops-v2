@@ -1,11 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import welcomeImage from "../../../public/images/signup/welcome_img.png";
-import emailIcon from "../../../public/icons/email.png";
-import lockIcon from "../../../public/icons/lock.png";
-import phoneIcon from "../../../public/icons/phone.png";
-import contactIcon from "../../../public/icons/contact.png";
 import Link from "next/link";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
@@ -34,7 +29,7 @@ const OrganizationSignup = () => {
             <div className="w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4">
               <div>
                 <Image
-                  src={welcomeImage}
+                  src={"/images/signup/welcome_img.png"}
                   height={500}
                   width={500}
                   alt="Welcome to Carbonops"
@@ -75,7 +70,7 @@ const OrganizationSignup = () => {
                     </div>
                     <div>
                       <Image
-                        src={emailIcon}
+                        src={"/icons/email.png"}
                         width={30}
                         height={30}
                         alt="Email"
@@ -95,7 +90,7 @@ const OrganizationSignup = () => {
                     </div>
                     <div>
                       <Image
-                        src={phoneIcon}
+                        src={"/icons/phone.png"}
                         width={30}
                         height={30}
                         alt="Contact"
@@ -115,7 +110,7 @@ const OrganizationSignup = () => {
                     </div>
                     <div>
                       <Image
-                        src={contactIcon}
+                        src={"/icons/contact.png"}
                         width={30}
                         height={30}
                         alt="Date of Birth"
@@ -136,8 +131,14 @@ const OrganizationSignup = () => {
                     <div
                       onClick={passwordToggle}
                       className="toggle-button"
-                      style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
-                      >
+                      style={{
+                        paddingTop: 5,
+                        width: 30,
+                        height: 30,
+                        color: "#6B717F",
+                        marginLeft: 5,
+                      }}
+                    >
                       {passwordType === "password" ? <FiEyeOff /> : <FiEye />}
                     </div>
                   </div>
@@ -153,15 +154,21 @@ const OrganizationSignup = () => {
                       />
                     </div>
                     <div
-                          onClick={confirmPasswordToggle}
-                          className="toggle-button"
-                          style={{ paddingTop: 5, width: 30, height: 30, color: "#6B717F", marginLeft: 5 }}
-                          >
-                          {confirmPasswordType === "password" ? (
-                            <FiEyeOff />
-                          ) : (
-                            <FiEye />
-                          )}
+                      onClick={confirmPasswordToggle}
+                      className="toggle-button"
+                      style={{
+                        paddingTop: 5,
+                        width: 30,
+                        height: 30,
+                        color: "#6B717F",
+                        marginLeft: 5,
+                      }}
+                    >
+                      {confirmPasswordType === "password" ? (
+                        <FiEyeOff />
+                      ) : (
+                        <FiEye />
+                      )}
                     </div>
                   </div>
                 </div>
