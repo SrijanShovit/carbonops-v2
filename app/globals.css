@@ -36,6 +36,74 @@ header{
 }
 
 
+/* Css for dark mode button */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  transition: 0.5s linear;
+}
+
+body.dark {
+  background-color: #043011;
+  color: white;
+}
+
+.label {
+  /* background-color:brown; */
+  background: #181717;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  position: relative;
+  height: 32px;
+  width: 73px;
+  padding: 3px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.moon {
+  color: yellow;
+  transition: 0.3s;
+}
+
+.sun {
+  color: yellow;
+  margin-left: 16px;
+  transition: 0.3s;
+}
+
+.ball {
+  color: white;
+  position: absolute;
+  transition: transform 0.3s linear;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+
+}
+
+.checkbox:checked+.label .ball {
+  transform: translate(38px);
+}
+
+
+
+i1{
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-0%, -109%);
+}
+
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }

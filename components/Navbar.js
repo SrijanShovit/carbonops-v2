@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 import { useSession, signOut } from 'next-auth/react'
+import { Style } from "@mui/icons-material";
+import styled from "styled-components";
 
 const Navbar = () => {
   const { data: session } = useSession()
@@ -14,7 +16,7 @@ const Navbar = () => {
 
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
-    if (window.scrollY > 90) { 
+    if (window.scrollY > 90) {
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -24,7 +26,23 @@ const Navbar = () => {
     window.addEventListener("scroll", changeNavColor);
 
 
+  // function for dark mode button (Desktop)
+  useEffect(() => {
+    const handleCheckboxChange = () => {
+      document.body.classList.toggle('dark');
+    };
 
+    const checkbox = document.getElementById("checkbox");
+    checkbox.addEventListener('change', handleCheckboxChange);
+
+    return () => {
+      checkbox.removeEventListener('change', handleCheckboxChange);
+    };
+  }, []);
+  // styling ball of dark mode button
+  const styles = {
+    fontSize: '30px',
+  };
 
   return (
     <>
@@ -33,8 +51,8 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200 z-50"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023] z-50"
+              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200"
+              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[transparent]"
           }
         >
           {/* Navmenu */}
@@ -89,6 +107,15 @@ const Navbar = () => {
               Signup
             </Link></>}
 
+
+              <div>
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="label" >
+                  <i class="material-symbols-outlined moon">dark_mode</i>
+                  <i class="material-symbols-outlined sun"> clear_day</i>
+                  <div class="material-symbols-outlined  ball" style={styles}>circle</div>
+                </label>
+              </div>
             </nav>
             {/* Hamburger button */}
             <button
@@ -102,10 +129,12 @@ const Navbar = () => {
             <nav
               className={
                 !nav
-                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-8 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
+                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-20 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
                   : "hidden"
               }
             >
+              <i1 class="bi bi-brightness-high-fill" id="toggleDark"></i1>
+
               <Link
                 href="/"
                 className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
