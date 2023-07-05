@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Floating animation for hero section text */
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -12,35 +12,45 @@
   margin-left: 30px;
   margin-top: 5px;
 }
-
 @keyframes floating {
-    0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-30px);
-      }
-      100% {
-        transform: translateY(0);
-      }
- }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+i1{
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-0%, -109%);
+}
+header{
+  z-index: 100;
+}
+
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: black;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:#00BD57; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background:green; 
-  }
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00BD57;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: green;
+}
