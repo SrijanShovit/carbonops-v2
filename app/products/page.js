@@ -6,6 +6,7 @@ const page = () => {
   const sampleImgUrl = "/images/homepage/documents.png";
   const products = [
     {
+      id: 1,
       image: sampleImgUrl,
       productName: "Product Name 1",
       description:
@@ -13,6 +14,7 @@ const page = () => {
       price: "₹100",
     },
     {
+      id: 2,
       image: sampleImgUrl,
       productName: "Product Name 2",
       description:
@@ -20,6 +22,7 @@ const page = () => {
       price: "₹150",
     },
     {
+      id: 3,
       image: sampleImgUrl,
       productName: "Product Name 3",
       description:
@@ -40,7 +43,7 @@ const page = () => {
       <div>
         {products.map((product) => {
           return (
-            <div className="mt-4">
+            <div className="mt-4" id={product.id}>
               <div className="w-[85%] mx-auto bg-[#12323f] flex flex-col sm:flex-row justify-between  sm:justify-between items-center gap-2 sm:px-4 py-2">
                 <div className="sm:flex-1">
                   <Image
