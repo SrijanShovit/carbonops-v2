@@ -7,13 +7,23 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import { useRouter} from 'next/navigation'
 
 const LoginPage = () => {
+  const router = useRouter();
   const [passwordType, setPasswordType] = useState("password");
+  const [loginForm, setLoginForm] = useState({email: "", password: "", category: ""});
 
   const passwordToggle = () => {
     if (passwordType === "password") {
       setPasswordType("text");
     } else setPasswordType("password");
   };
+
+const handleChange = (e)=>{
+  const {name, value} = e.target;
+  setLoginForm((prev)=>{
+    return {...prev, [name]: value};
+  })
+}
+
    const handleGoogleSignIn = async () => {
       await signIn('google')
     }
@@ -59,13 +69,18 @@ const LoginPage = () => {
               </div> */}
               {/* Input fields Container*/}
               <div className='flex flex-col justify-between items-center md:items-start gap-6 text-[#dee2e6] mt-4'>
+       
                 <div>
                   <div className="flex flex-row border-b-2 border-slate-400 items-center mb-5">
+                  
                     <div>
                       <input
                         type="text"
                         placeholder="Email"
                         className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
+                        name="email"
+                        value={loginForm.email}
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -84,6 +99,9 @@ const LoginPage = () => {
                           type={passwordType}
                           placeholder="Password"
                           className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
+                          name="password"
+                        value={loginForm.password}
+                        onChange={handleChange}
                         />
                       </div>
                       <div
@@ -108,6 +126,7 @@ const LoginPage = () => {
                           type='radio'
                           name='category'
                           value='individual'
+                          onChange={handleChange}
                         />
                         Individual
                       </label>
@@ -117,6 +136,7 @@ const LoginPage = () => {
                           type='radio'
                           name='category'
                           value='organization'
+                          onChange={handleChange}
                         />
                         Organization
                       </label>
@@ -140,8 +160,9 @@ const LoginPage = () => {
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <div >
                   <button
-                    href='/signup'
+                    type="submit"
                     className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
+                    onClick={handleSubmit}
                   >
                     Login
                   </button>

@@ -3,11 +3,18 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { backendURL } from "@/app/backendInfo";
+import { useRouter } from "next/navigation";
+
 
 const IndividualSignup = () => {
+  const router = useRouter();
 
   const [passwordType, setPasswordType] = useState("password");
   const [confirmPasswordType, setConfirmPasswordType] = useState("password");
+  const [signup, setSignUp] = useState({
+    email: "", contact: "", dob: "", password: "",confirmPassword: ""
+  })
 
   const passwordToggle = () => {
     if (passwordType === "password") {
@@ -20,6 +27,44 @@ const IndividualSignup = () => {
       setConfirmPasswordType("text");
     } else setConfirmPasswordType("password");
   };
+
+  const handleChange = (e)=>{
+    const {name, value} = e.target;
+    setSignUp((prev)=>{
+      return {...prev, [name]: value}
+    })
+  }
+
+  const handleSubmit = async (e)=>{
+    e.preventDefault();
+    if(signup.email === "" || signup.contact === "" || signup.dob === "" || signup.password === "" || signup.confirmPassword === ""){
+      alert("Please fill all fields.")
+      return
+    }
+    delete signup.confirmPassword;
+    signup.role = "individual"
+    signup.dob = new Date(signup.dob);
+    try{
+      await fetch(`${backendURL}/ping/signup`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(signup),
+      })
+      .then(async (response)=>{
+        const data =  await response.json();
+        return data.user;
+    })
+    .then((userData)=>{
+      alert("User created successfully Please Login!!")
+      router.push("/login")
+    })
+    }catch(err){
+      console.log(err)
+    }
+  }
 
   return (
     <>
@@ -66,6 +111,9 @@ const IndividualSignup = () => {
                         type="text"
                         placeholder="Email"
                         className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
+                        name="email"
+                        value={signup.email}
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -86,6 +134,9 @@ const IndividualSignup = () => {
                         type="text"
                         placeholder="Contact"
                         className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
+                        name="contact"
+                        value={signup.contact}
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -103,9 +154,12 @@ const IndividualSignup = () => {
                   <div className="flex flex-row border-b-2 border-slate-400 items-center">
                     <div>
                       <input
-                        type="text"
+                        type="date"
                         placeholder="Date of Birth"
                         className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57]"
+                        value={signup.dob}
+                        name="dob"
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -126,6 +180,9 @@ const IndividualSignup = () => {
                         type={passwordType}
                         placeholder="Password"
                         className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
+                        value={signup.password}
+                        name="password"
+                        onChange={handleChange}
                       />
                     </div>
                     {/* <div>
@@ -159,6 +216,9 @@ const IndividualSignup = () => {
                         type={confirmPasswordType}
                         placeholder="Confirm Password"
                         className="w-[22rem] bg-transparent focus:outline-none text-[#00bd57] pr-2"
+                        value={signup.confirmPassword}
+                        name="confirmPassword"
+                        onChange={handleChange}
                       />
                     </div>
                     {/* <div>
@@ -190,8 +250,9 @@ const IndividualSignup = () => {
                 </div>
                 <div className="mx-auto">
                   <button
-                    href="/signup"
+                   type="submit"
                     className="text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+                    onClick={handleSubmit}
                   >
                     Signup
                   </button>
