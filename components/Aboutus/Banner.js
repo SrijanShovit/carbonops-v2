@@ -15,7 +15,7 @@ const Banner = () => {
         <div className="md:w-[40%]">
           <div className="flex flex-col justify-center md:items-start items-center gap-2">
             <h2 className="text-4xl font-bold mx-4">Our Mission</h2>
-            <p className="text-xl font-normal text-gray-200 mx-4 md:text-left text-center">At Carbonops, our mission is to raise environmental awareness and drive action towards a greener planet. We are committed to providing individuals with the knowledge, tools, and resources they need to understand and reduce their carbon footprint. By creating a personalized accountancy platform, we aim to empower individuals to track their environmental impact and take steps towards more sustainable choices in their everyday lives.</p>
+            <p className="text-xl font-normal text-gray-200 mx-4 md:text-left text-center">At Carbonops&#44; our mission is to raise environmental awareness and drive action towards a greener planet. We are committed to providing individuals with the knowledge&#44; tools&#44; and resources they need to understand and reduce their carbon footprint. By creating a personalized accountancy platform&#44; we aim to empower individuals to track their environmental impact and take steps towards more sustainable choices in their everyday lives.</p>
           </div>
         </div>
       </div>
