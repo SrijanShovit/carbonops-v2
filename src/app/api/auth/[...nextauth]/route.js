@@ -1,8 +1,8 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import CredentialsProvider  from 'next-auth/providers/credentials'
-import connectDB from '@/backend/config/db.config'
-import userModel from '@/backend/models/allUsers'
+import connectDB from '../../../../../backend/config/db.config'
+import userModel from '../../../../../backend/models/allUsers'
 import {compare} from "bcrypt"
 
 export const authOptions = { 
@@ -19,19 +19,20 @@ export const authOptions = {
         if(!user){
           throw new Error("No User find with this email. Please Sign Up")
         }
-        credentials.callbackUrl = credentials.callbackUrl + `/${user._id.toString()}`
         const checkPassword = await compare(credentials.password, user.password);
          if(!checkPassword){
           throw new Error("Password does not match")
          }
 
-         return user;
+         console.log(user)
+         return Promise.resolve(user);
 
         }
     })
   ],
   callbacks: {
    async redirect({ url, baseUrl }) {
+      if(url) return url;
       return baseUrl
     },
   },

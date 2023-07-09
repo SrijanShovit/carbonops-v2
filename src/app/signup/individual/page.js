@@ -3,8 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { backendURL } from "@/app/backendInfo";
 import { useRouter } from "next/navigation";
+import { backendURL } from "@/app/URL";
 
 
 const IndividualSignup = () => {

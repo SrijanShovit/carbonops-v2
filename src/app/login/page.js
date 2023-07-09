@@ -5,6 +5,7 @@ import { signIn } from 'next-auth/react'
 import Link from "next/link";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import { useRouter} from 'next/navigation'
+import { frontendURL } from "../URL";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -26,6 +27,28 @@ const handleChange = (e)=>{
 
    const handleGoogleSignIn = async () => {
       await signIn('google')
+    }
+
+    const handleSubmit = async ()=>{
+      if(loginForm.email === "" || loginForm.password === "" || loginForm.category === ""){
+        alert("Please fill all fields");
+        return;
+      }
+      const status = await signIn("credentials", {
+        redirect: false,
+        email: loginForm.email,
+        password: loginForm.password,
+        role: loginForm.category,
+        callbackUrl: `${frontendURL}/`
+      })
+        
+        console.log(status)
+
+       if (status.error) {
+         alert(status.error)
+       }else{
+        router.push(status.url)
+       }
     }
 
 
