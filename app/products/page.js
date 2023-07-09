@@ -43,7 +43,7 @@ const page = () => {
       <div>
         {products.map((product) => {
           return (
-            <div className="mt-4" id={product.id}>
+            <div className="mt-4" key={product.id}>
               <div className="w-[85%] mx-auto bg-[#12323f] flex flex-col sm:flex-row justify-between  sm:justify-between items-center gap-2 sm:px-4 py-2">
                 <div className="sm:flex-1">
                   <Image
