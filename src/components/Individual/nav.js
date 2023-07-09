@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
-import plus from "../../public/icons/plus.png";
+import plus from "../../../public/icons/plus.png";
 import Link from 'next/link';
 import { FaUser } from 'react-icons/fa';
 import Actions from './actions';

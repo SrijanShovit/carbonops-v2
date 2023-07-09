@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from 'react'
-import footprint from "../../public/images/individual/footprint.png";
+import footprint from "../../../public/images/individual/footprint.png";
 import Image from "next/image";
 import localFont from 'next/font/local'
 
-const myFont = localFont ({ src: '../../public/fonts/IBMPlexMono-SemiBold.woff2' })
+const myFont = localFont ({ src: '../../../public/fonts/IBMPlexMono-SemiBold.woff2' })
 
 const Stats = () => {
   return (

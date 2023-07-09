@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import visitorinfo from "../../public/images/individual/visitorinfo.png";
+import visitorinfo from "../../../public/images/individual/visitorinfo.png";
 
 const Chart = () => {    
     return (

@@ -5,9 +5,9 @@ import React, { useState } from 'react'
 import { BsChevronLeft, BsPencil } from 'react-icons/bs';
 import Edit from './edit';
 import localFont from 'next/font/local'
-import profileimage from "../../public/images/individual/profileimage.png";
+import profileimage from "../../../public/images/individual/profileimage.png";
 
-const myFont = localFont ({ src: '../../public/fonts/IBMPlexMono-SemiBold.woff2' })
+const myFont = localFont ({ src: '../../../public/fonts/IBMPlexMono-SemiBold.woff2' })
 
 const Profilecard = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
