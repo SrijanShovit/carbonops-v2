@@ -189,7 +189,6 @@ const handleChange = (e)=>{
                   >
                     Login
                   </button>
-                  </Link>
                 </div>
                 <div className='mx-2'>
                   <button
