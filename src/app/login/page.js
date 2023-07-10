@@ -139,12 +139,13 @@ const LoginPage = () => {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <div >
-                  <button
-                    href='/signup'
-                    className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
-                  >
+                    <Link href='/myprofile'>
+                      <button
+                      className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
+                      >
                     Login
                   </button>
+                  </Link>
                 </div>
                 <div className='mx-2'>
                   <button
@@ -153,9 +154,8 @@ const LoginPage = () => {
                   >
                     Login with Google
                   </button>
-                </div></div>
-                
-                
+                </div>
+                </div>
               </div>
             </div>
           </div>
