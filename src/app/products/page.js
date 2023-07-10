@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "@/components/products/Navbar";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 const page = () => {
