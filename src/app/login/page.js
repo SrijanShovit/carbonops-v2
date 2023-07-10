@@ -189,6 +189,7 @@ const handleChange = (e)=>{
                   >
                     Login
                   </button>
+                  </Link>
                 </div>
                 <div className='mx-2'>
                   <button
@@ -197,9 +198,8 @@ const handleChange = (e)=>{
                   >
                     Login with Google
                   </button>
-                </div></div>
-                
-                
+                </div>
+                </div>
               </div>
             </div>
           </div>
