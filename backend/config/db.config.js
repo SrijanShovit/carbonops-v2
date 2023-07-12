@@ -7,7 +7,12 @@ const connectDB = async () => {
       useUnifiedTopology: true,
       //useCreateIndex: true,
       //useFindAndModify: false,
-    });
+    }).then(()=>{
+      console.log("Database Connected!!");
+    }).catch((err)=>{
+      console.log("Fail to connect Database!!");
+      console.log(err);
+    })
   } catch (err) {
     console.log(err);
   }
