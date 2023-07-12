@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 
@@ -20,6 +20,22 @@ const Navbar = () => {
   };
   if (typeof window !== "undefined")
     window.addEventListener("scroll", changeNavColor);
+//function for dark mode button
+useEffect(() => {
+  const handleCheckboxChange = () => {
+    document.body.classList.toggle('dark');
+  };
+  const checkbox = document.getElementById("checkbox");
+  checkbox.addEventListener('change', handleCheckboxChange);
+  return () => {
+    checkbox.removeEventListener('change', handleCheckboxChange);
+  };
+}, []);
+
+// styling ball of dark mode button
+const style = {
+  fontSize: '30px',
+};
 
   return (
     <>
@@ -29,7 +45,7 @@ const Navbar = () => {
           className={
             navColor
               ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200 z-10"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023] z-10"
+              : "fixed top-0 left-0 right-0 px-8  py-4 bg-[#12323f] md:bg-[transparent] z-10"
           }
         >
           {/* Navmenu */}
@@ -99,6 +115,14 @@ const Navbar = () => {
                 Option
               </Link>
             </nav>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="label" >
+                  <i class="material-symbols-outlined moon">dark_mode</i>
+                  <i class="material-symbols-outlined sun"> clear_day</i>
+                  <div class="material-symbols-outlined  ball" style={style} >circle</div>
+                </label>
+              </div>
           </div>
           {/* <img src={Logo} /> */}
         </header>
