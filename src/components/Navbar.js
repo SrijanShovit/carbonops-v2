@@ -1,9 +1,9 @@
 "use client";
+import { signOut, useSession } from 'next-auth/react';
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Image from "next/image";
-import { useSession, signOut } from 'next-auth/react'
 
 const Navbar = () => {
   const { data: session } = useSession()
@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
-    if (window.scrollY > 90) { 
+    if (window.scrollY > 90) {
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -68,41 +68,45 @@ const Navbar = () => {
 
               <Link
                 href="/"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 HOME
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/aboutus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 ABOUT
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/contactus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 CONTACT US
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
 
-          { session ?<><button
-              onClick={()=>signOut('google')}
-              className="text-lg hover:text-[#00BD57] ease-out duration-200"
-            >
-              Logout
-            </button>
-          </>: <><Link
-              href="/login"
-              className="text-lg hover:text-[#00BD57] ease-out duration-200"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
-            >
-              Signup
-            </Link></>}
+              {session ? <><button
+                onClick={() => signOut('google')}
+                className="text-lg hover:text-[#00BD57] ease-out duration-200 relative group"
+              >
+                Logout
+              </button>
+              </> : <><Link
+                href="/login"
+                className="text-lg hover:text-[#00BD57] ease-out duration-200 relative group"
+              >
+                Login
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
+              </Link>
+                <Link
+                  href="/signup"
+                  className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+                >
+                  Signup
+                </Link></>}
 
             </nav>
             {/* Hamburger button */}
@@ -123,27 +127,31 @@ const Navbar = () => {
             >
               <Link
                 href="/"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 HOME
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/aboutus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 ABOUT
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/contactus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 CONTACT US
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/login"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 Login
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/signup"
