@@ -31,7 +31,7 @@ const Team = () => {
       <h2 className="text-center text-4xl font-bold">Meet Our Team</h2>
       <div className="md:grid grid-cols-4 flex flex-col mx-[10vw] gap-10 md:mt-[5vh] justify-center items-center">
         {contributors?.map((item)=>{
-            return(<TeamCard item = {item} key={item?.id}/>)        
+            return(<TeamCard item = {item} key={item?.id} />)        
         })}
       </div>
     </div>
