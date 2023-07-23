@@ -1,9 +1,9 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { signOut, useSession } from 'next-auth/react';
 import Image from "next/image";
-import { useSession, signOut } from 'next-auth/react'
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const { data: session } = useSession()
@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
-    if (window.scrollY > 90) { 
+    if (window.scrollY > 90) {
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -23,7 +23,22 @@ const Navbar = () => {
   if (typeof window !== "undefined")
     window.addEventListener("scroll", changeNavColor);
 
+ //function for dark mode button
+   useEffect(() => {
+    const handleCheckboxChange = () => {
+      document.body.classList.toggle('dark');
+    };
+    const checkbox = document.getElementById("checkbox");
+    checkbox.addEventListener('change', handleCheckboxChange);
+    return () => {
+      checkbox.removeEventListener('change', handleCheckboxChange);
+    };
+  }, []);
 
+  // styling ball of dark mode button
+  const style = {
+    fontSize: '30px',
+  };
 
 
   return (
@@ -33,8 +48,8 @@ const Navbar = () => {
         <header
           className={
             navColor
-              ? "mb-20 fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] ease-in-out duration-200 z-50"
-              : "fixed top-0 left-0 right-0 px-8 md:px-12 py-4 bg-[#12323f] md:bg-[#152023] z-50"
+              ? "mb-20 fixed top-0 left-0 right-0  md:px-12 py-4 bg-[#12323f] ease-in-out duration-200 z-50"
+              : "fixed top-0 left-0 right-0 md:px-12 py-4 bg-[#12323f] md:bg-[transparent] z-50"
           }
         >
           {/* Navmenu */}
@@ -53,41 +68,45 @@ const Navbar = () => {
 
               <Link
                 href="/"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 HOME
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/aboutus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 ABOUT
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/contactus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 CONTACT US
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
 
-          { session ?<><button
-              onClick={()=>signOut('google')}
-              className="text-lg hover:text-[#00BD57] ease-out duration-200"
-            >
-              Logout
-            </button>
-          </>: <><Link
-              href="/login"
-              className="text-lg hover:text-[#00BD57] ease-out duration-200"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
-            >
-              Signup
-            </Link></>}
+              {session ? <><button
+                onClick={() => signOut('google')}
+                className="text-lg hover:text-[#00BD57] ease-out duration-200 relative group"
+              >
+                Logout
+              </button>
+              </> : <><Link
+                href="/login"
+                className="text-lg hover:text-[#00BD57] ease-out duration-200 relative group"
+              >
+                Login
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
+              </Link>
+                <Link
+                  href="/signup"
+                  className="text-lg bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out"
+                >
+                  Signup
+                </Link></>}
 
             </nav>
             {/* Hamburger button */}
@@ -108,27 +127,31 @@ const Navbar = () => {
             >
               <Link
                 href="/"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 HOME
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/aboutus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 ABOUT
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/contactus"
-                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg mx-3 hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 CONTACT US
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/login"
-                className="text-lg hover:text-[#00BD57] ease-out duration-200"
+                className="text-lg hover:text-[#00BD57] ease-out duration-200 relative group"
               >
                 Login
+                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-[#00BD57] transition-all group-hover:w-full rounded-2xl"></span>
               </Link>
               <Link
                 href="/signup"
@@ -136,7 +159,16 @@ const Navbar = () => {
               >
                 Signup
               </Link>
+
             </nav>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="label" >
+                  <i class="material-symbols-outlined moon">dark_mode</i>
+                  <i class="material-symbols-outlined sun"> clear_day</i>
+                  <div class="material-symbols-outlined  ball" style={style} >circle</div>
+                </label>
+              </div>
           </div>
           {/* <img src={Logo} /> */}
         </header>
