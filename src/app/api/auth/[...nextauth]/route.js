@@ -14,7 +14,7 @@ export const authOptions = {
     CredentialsProvider({
       name: "Credentials",
       async authorize(credentials, req) {
-        connectDB().catch((err)=>{error: "Database Connection Failed"})
+        connectDB("mongodb://127.0.0.1:27017/carbonops");
         const user = await userModel.findOne({email: credentials.email, role: credentials.role});
         if(!user){
           throw new Error("No User find with this email. Please Sign Up")
