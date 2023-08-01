@@ -5,6 +5,7 @@ import Modal from "react-modal";
 //import Logo from "../../public/images/Carbonops.png";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 // import Link from "next/link";
 const Calculation = () => {
@@ -54,7 +55,14 @@ const Calculation = () => {
         {/* Nav */}
         <div className="w-full flex justify-between items-center px-6 md:px-12 py-4">
           <div>
-
+            <Link href="/">
+          <Image
+                src="/images/Carbonops.png"
+                width={200}
+                height={200}
+                alt="CarbonOps"
+              />
+            </Link>
           </div>
           <h2 className="text-xl font-semibold">Dashboard</h2>
         </div>
