@@ -40,6 +40,7 @@ const Footer = () => {
                   width={35}
                   height={35}
                   alt="Carbonops Google"
+                  className="hover:w-10 hover:h-10 hover:bg-gray-200 hover:border hover:border-gray-200 hover:rounded-full"
                 />
               </a>
               <a
@@ -52,6 +53,7 @@ const Footer = () => {
                   width={35}
                   height={35}
                   alt="Carbonops Facebook"
+                  className="hover:w-10 hover:h-10 hover:bg-gray-200 hover:border hover:border-gray-200 hover:rounded-full"
                 />
               </a>
               <a
@@ -64,6 +66,7 @@ const Footer = () => {
                   width={35}
                   height={35}
                   alt="Carbonops Twitter"
+                  className="hover:w-10 hover:h-10 hover:bg-gray-200 hover:border hover:border-gray-200 hover:rounded-full"
                 />
               </a>
             </div>
