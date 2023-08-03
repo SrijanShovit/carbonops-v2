@@ -55,10 +55,10 @@ const handleChange = (e)=>{
   return (
 
       <> <div className='text-lg w-full min-h-screen flex flex-col justify-center items-center my-16 '>
-        <div className='w-[90%] md:w-[70%] mx-auto bg-[#12323f] max-xl:my-20'>
-          <div className='flex flex-col xl:flex-row justify-between items-center p-4'>
-            <div className='w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4'>
-              <div>
+        <div className='w-[90%] md:w-[70%] mx-auto bg-[#12323f] max-lg:my-20'>
+          <div className='flex flex-col-reverse lg:flex-row justify-between items-center p-4 '>
+            <div className='w-full flex flex-col justify-between items-center gap-2 border-t-2 border-slate-400 lg:border-t-0 lg:border-r-2 pb-4 m-5 p-5'>
+              <div className="max-lg:hidden">
                 <Image
                   src={"/images/login/Environment.png"}
                   height={500}
@@ -91,7 +91,7 @@ const handleChange = (e)=>{
                 </h2>
               </div> */}
               {/* Input fields Container*/}
-              <div className='flex flex-col justify-between items-center md:items-start gap-6 text-[#dee2e6] mt-4'>
+              <div className='flex flex-col justify-between items-center md:items-start gap-6 text-[#dee2e6] mt-4 mx-5'>
        
                 <div>
                   <div className="flex flex-row border-b-2 border-slate-400 items-center mb-5">
@@ -190,8 +190,9 @@ const handleChange = (e)=>{
                     </button>
                   </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <div >
+                <div className="flex justify-center w-full">
+                <div className="flex flex-col items-center">
+                  <div className="my-2">
                   <button
                     type="submit"
                     className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
@@ -200,13 +201,14 @@ const handleChange = (e)=>{
                     Login
                   </button>
                 </div>
-                <div className='mx-2'>
+                <div className='my-2'>
                   <button
                     onClick={handleGoogleSignIn}
                     className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
                   >
                     Login with Google
                   </button>
+                </div>
                 </div>
                 </div>
               </div>
