@@ -7,10 +7,12 @@ import Team from '@/components/Aboutus/Team'
 const About = () => {
   return (
     <div>
-        <Navbar/>
+
         <Banner/>
         <Contact/>
-        <Team/>
+        <div className='my-24'>
+          <Team/>
+        </div>
     </div>
   )
 }

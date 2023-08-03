@@ -54,9 +54,9 @@ const handleChange = (e)=>{
 
   return (
 
-      <> <div className='text-lg w-full h-screen flex flex-col justify-center items-center my-16 md:my-0'>
-        <div className='w-[90%] md:w-[70%] mx-auto bg-[#12323f]'>
-          <div className='flex flex-col md:flex-row justify-between items-center p-4'>
+      <> <div className='text-lg w-full min-h-screen flex flex-col justify-center items-center my-16 '>
+        <div className='w-[90%] md:w-[70%] mx-auto bg-[#12323f] max-xl:my-20'>
+          <div className='flex flex-col xl:flex-row justify-between items-center p-4'>
             <div className='w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4'>
               <div>
                 <Image
@@ -144,25 +144,35 @@ const handleChange = (e)=>{
                   </div>
                   <div className="flex flex-col-reverse items-start">
                     <div>
-                      <label className=''>
+                      <span className="mx-5">
+
                         <input
                           type='radio'
                           name='category'
                           value='individual'
+                          id="individual"
+                          className=" bg-gray-400 ring-slate-800 ring-offset-gray-800"
                           onChange={handleChange}
-                        />
+                          />
+                      <label className='px-2' for='individual'>
                         Individual
-                      </label>
+                        </label>
+                      </span>
 
-                      <label className='px-2'>
+                      <span>
+
+
                         <input
                           type='radio'
                           name='category'
                           value='organization'
+                          id='organization'
                           onChange={handleChange}
-                        />
+                          />
+                      <label className='px-2' for='organization'>
                         Organization
-                      </label>
+                        </label>
+                      </span>
                     </div>
                     <label className='text-lg'>Choose Category</label>
                   </div>
@@ -170,9 +180,9 @@ const handleChange = (e)=>{
                 <div className='w-[20rem] flex justify-between items-center text-md'>
                   <div className='flex flex-row justify-between items-center gap-2'>
                     <div>
-                      <input type='checkbox' className='accent-[#00bd57]' />
+                      <input type='checkbox' id="remember-me" className='accent-[#00bd57]' />
                     </div>
-                    <label>Remember me</label>
+                    <label for="remember-me" >Remember me</label>
                   </div>
                   <div>
                     <button className='text-red-400 hover:underline duration-300 ease-out'>

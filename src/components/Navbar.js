@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-      <main className="text-white">
+      <main className="text-white ">
         {/* Fixed Nav */}
         <header
           className={
@@ -64,7 +64,7 @@ const Navbar = () => {
               />
             </a>
             {/* Desktop Navmenu */}
-            <nav className="hidden md:flex justify-center items-center gap-8">
+            <nav className="hidden lg:flex justify-center items-center gap-8">
 
               <Link
                 href="/"
@@ -111,7 +111,7 @@ const Navbar = () => {
             </nav>
             {/* Hamburger button */}
             <button
-              className="md:hidden text-xl hover:text-[#00BD57] ease-out duration-150"
+              className="lg:hidden text-xl hover:text-[#00BD57] ease-out duration-150 float-right"
               onClick={handleNav}
             >
               {!nav ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -121,7 +121,7 @@ const Navbar = () => {
             <nav
               className={
                 !nav
-                  ? "md:hidden fixed right-0 top-16 w-1/2 pt-8 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
+                  ? "lg:hidden fixed right-0 top-16 w-1/2 pt-8 h-full flex flex-col justify-start items-center gap-6 bg-[#12323f] duration-200 ease-in-out"
                   : "hidden"
               }
             >
@@ -161,7 +161,7 @@ const Navbar = () => {
               </Link>
 
             </nav>
-            <div>
+            <div >
                 <input type="checkbox" class="checkbox" id="checkbox" />
                 <label for="checkbox" class="label" >
                   <i class="material-symbols-outlined moon">dark_mode</i>

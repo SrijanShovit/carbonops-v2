@@ -7,14 +7,13 @@ import Footer from "@/components/Footer";
 import GoToTop from "@/components/GoToTop";
 export default function Home() {
   return (
-    <><div className="w-[95%] mx-auto">
+    <>
+    <div className="w-[95%] mx-auto">
       <GoToTop />
-      <div>
-        <Navbar />
-      </div>
+
       <div>
         <Hero />
-       
+
       </div>
       <div>
         <Services />
@@ -25,8 +24,8 @@ export default function Home() {
       <div>
         <Organizations />
       </div>
-    </div><div>
-        <Footer />
-      </div></>
+    </div>
+
+    </>
   );
 }
