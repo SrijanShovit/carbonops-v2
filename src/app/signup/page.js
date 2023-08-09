@@ -4,13 +4,13 @@ import Link from "next/link";
 const SignupAs = () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col justify-center items-center gap-16">
-        <div className="absolute top-4 md:block md:top-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#53c6f2]">
+      <div className="w-full min-h-screen mt-36">
+        <div className=" text-center ">
+          <h1 className="text-4xl m-20  font-bold text-[#53c6f2]">
             SIGNUP AS
           </h1>
         </div>
-        <div className="flex justify-center items-center gap-8 flex-col md:flex-row mt-64 md:mt-0">
+        <div className="flex justify-center items-center gap-8 flex-col md:flex-row ">
           <Card>
             <div className="flex flex-col justify-between items-center py-4">
               <div className="py-0">

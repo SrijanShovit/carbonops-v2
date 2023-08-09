@@ -54,11 +54,11 @@ const handleChange = (e)=>{
 
   return (
 
-      <> <div className='text-lg w-full h-screen flex flex-col justify-center items-center my-16 md:my-0'>
-        <div className='w-[90%] md:w-[70%] mx-auto bg-[#12323f]'>
-          <div className='flex flex-col md:flex-row justify-between items-center p-4'>
-            <div className='w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4'>
-              <div>
+      <> <div className='text-lg w-full min-h-screen flex flex-col justify-center items-center my-16 '>
+        <div className='w-[90%] md:w-[70%] mx-auto bg-[#12323f] max-lg:my-20'>
+          <div className='flex flex-col-reverse lg:flex-row justify-between items-center p-4 '>
+            <div className='w-full flex flex-col justify-between items-center gap-2 border-t-2 border-slate-400 lg:border-t-0 lg:border-r-2 pb-4 m-5 p-5'>
+              <div className="max-lg:hidden">
                 <Image
                   src={"/images/login/Environment.png"}
                   height={500}
@@ -91,7 +91,7 @@ const handleChange = (e)=>{
                 </h2>
               </div> */}
               {/* Input fields Container*/}
-              <div className='flex flex-col justify-between items-center md:items-start gap-6 text-[#dee2e6] mt-4'>
+              <div className='flex flex-col justify-between items-center md:items-start gap-6 text-[#dee2e6] mt-4 mx-5'>
        
                 <div>
                   <div className="flex flex-row border-b-2 border-slate-400 items-center mb-5">
@@ -144,25 +144,35 @@ const handleChange = (e)=>{
                   </div>
                   <div className="flex flex-col-reverse items-start">
                     <div>
-                      <label className=''>
+                      <span className="mx-5">
+
                         <input
                           type='radio'
                           name='category'
                           value='individual'
+                          id="individual"
+                          className=" bg-gray-400 ring-slate-800 ring-offset-gray-800"
                           onChange={handleChange}
-                        />
+                          />
+                      <label className='px-2' for='individual'>
                         Individual
-                      </label>
+                        </label>
+                      </span>
 
-                      <label className='px-2'>
+                      <span>
+
+
                         <input
                           type='radio'
                           name='category'
                           value='organization'
+                          id='organization'
                           onChange={handleChange}
-                        />
+                          />
+                      <label className='px-2' for='organization'>
                         Organization
-                      </label>
+                        </label>
+                      </span>
                     </div>
                     <label className='text-lg'>Choose Category</label>
                   </div>
@@ -170,9 +180,9 @@ const handleChange = (e)=>{
                 <div className='w-[20rem] flex justify-between items-center text-md'>
                   <div className='flex flex-row justify-between items-center gap-2'>
                     <div>
-                      <input type='checkbox' className='accent-[#00bd57]' />
+                      <input type='checkbox' id="remember-me" className='accent-[#00bd57]' />
                     </div>
-                    <label>Remember me</label>
+                    <label for="remember-me" >Remember me</label>
                   </div>
                   <div>
                     <button className='text-red-400 hover:underline duration-300 ease-out'>
@@ -180,8 +190,9 @@ const handleChange = (e)=>{
                     </button>
                   </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <div >
+                <div className="flex justify-center w-full">
+                <div className="flex flex-col items-center">
+                  <div className="my-2">
                   <button
                     type="submit"
                     className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
@@ -190,13 +201,14 @@ const handleChange = (e)=>{
                     Login
                   </button>
                 </div>
-                <div className='mx-2'>
+                <div className='my-2'>
                   <button
                     onClick={handleGoogleSignIn}
                     className='text-white font-semibold text-xl bg-[#00BD57] py-1 px-8 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm hover:shadow-md hover:shadow-green-300 duration-200 ease-out'
                   >
                     Login with Google
                   </button>
+                </div>
                 </div>
                 </div>
               </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SignupLayout = ({children}) => {
+const LoginLayout = ({children}) => {
   return (
     <div>{children}</div>
   )
 }
 
-export default SignupLayout
+export default LoginLayout
