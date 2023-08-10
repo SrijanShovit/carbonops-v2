@@ -50,15 +50,15 @@ const Calculation = () => {
 
   return (
     <>
-      <div className="w-full h-screen relative">
+      <div className="w-full min-h-screen">
         {/* Nav */}
+        { /*
         <div className="w-full flex justify-between items-center px-6 md:px-12 py-4">
-          <div>
-
-          </div>
+          
           <h2 className="text-xl font-semibold">Dashboard</h2>
         </div>
-        <div className="w-full mx-auto text-center mb-4 mt-2">
+        */}
+        <div className="w-full mx-auto text-center mb-10 mt-28 ">
           <h1 className="text-3xl md:text-4xl font-semibold text-[#54ccfa]">
             Carbon Footprint Calculator
           </h1>
@@ -430,9 +430,9 @@ const Calculation = () => {
           </button>
               </div>*/}
       </div>
-      <div className="w-10 h-10 rounded-full bg-orange-400 absolute top-[18rem] left-[2.5rem]"></div>
-      <div className="w-6 h-6 rounded-full bg-yellow-400 absolute top-[44rem] left-[5rem]"></div>
-      <div className="w-6 h-6 rounded-full bg-yellow-400 absolute top-[10rem] left-[15rem] md:left-[32rem]"></div>
+      <div className=" -z-10 w-10 h-10 rounded-full bg-orange-400 absolute top-[18rem] left-[2.5rem]"></div>
+      <div className=" -z-10 w-6 h-6 rounded-full bg-yellow-400 absolute top-[44rem] left-[5rem]"></div>
+      <div className=" -z-10 w-6 h-6 rounded-full bg-yellow-400 absolute top-[10rem] left-[15rem] md:left-[32rem]"></div>
     </>
   );
 };

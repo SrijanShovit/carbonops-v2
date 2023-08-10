@@ -23,11 +23,11 @@ const OrganizationSignup = () => {
 
   return (
     <>
-      <div className="text-lg w-full h-screen flex flex-col justify-center items-center my-16 md:my-0">
-        <div className="w-[90%] md:w-[70%] mx-auto bg-[#12323f]">
-          <div className="flex flex-col md:flex-row justify-between items-center p-4">
-            <div className="w-full flex flex-col justify-between items-center gap-2 border-b-2 border-slate-400 md:border-b-0 md:border-r-2 pb-4">
-              <div>
+      <div className="text-lg w-full min-h-screen flex flex-col justify-center items-center my-16 md:my-0">
+        <div className="w-[90%] md:w-[70%] mx-auto bg-[#12323f] my-20">
+          <div className="flex flex-col-reverse lg:flex-row justify-between items-center p-4">
+            <div className="w-full flex flex-col justify-between items-center gap-2 border-t-2 border-slate-400 lg:border-t-0 lg:border-r-2 pb-4 m-5 p-5">
+              <div className="max-lg:hidden">
                 <Image
                   src={"/images/signup/welcome_img.png"}
                   height={500}
@@ -45,7 +45,7 @@ const OrganizationSignup = () => {
                 </Link>
               </button>
             </div>
-            <div className="mt-8 md:mt-0 w-full flex flex-col justify-between items-center gap-2">
+            <div className="mx-2 mt-8 md:mt-0 w-full flex flex-col justify-between items-center gap-2">
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold text-[#53c6f2]">
                   SIGNUP

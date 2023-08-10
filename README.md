@@ -64,7 +64,7 @@ Do have a look below
 
 [Click here](https://lucid.app/lucidchart/ccff0196-6408-437e-9210-d7a222d7c0e5/edit?viewport_loc=-322%2C-258%2C5376%2C2400%2C0_0&invitationId=inv_4c39b0f5-c7c4-4942-9740-5e5d83352291) to checkout the ER diagram.
 
-## Target audiance: 
+## Target audience: 
 All
 
 ## Project constraints:

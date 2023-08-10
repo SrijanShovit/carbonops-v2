@@ -7,8 +7,8 @@ function Contact() {
   const instagramColor = "#E4405F"; // Instagram Pink
   const linkedinColor = "#0077B5";
   return (
-    <div className="">
-      <Navbar />
+    <div className="mt-24">
+      
       <div className="mt-[10rem] ml-[0rem] sm:ml-[3rem] mb-[4rem]">
         <div className="ml-[13%]">
           <button
@@ -22,15 +22,19 @@ function Contact() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center mt-4">
-          <textarea
-            className="w-[75%] feedback-textarea bg-lightgreen-200 resize-none border bg-green-200 border-gray-300 rounded-md p-2 h-[14rem] mb-2"
-            placeholder="Enter your feedback"
-          ></textarea>
+        <div className="ml-[13%] my-12 w-[75%]  max-w-2xl">
+          <div>
 
-          <button className="left-0 feedback-button sm:ml-[63%] bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+          <textarea
+            className=" w-full feedback-textarea bg-lightgreen-200 resize-none border bg-green-200 border-gray-300 text-black rounded-md p-2 h-[14rem] mb-2"
+            placeholder="Enter your feedback"
+            ></textarea>
+          </div>
+          <div>
+          <button className=" float-right bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
             Submit Feedback
           </button>
+          </div>
         </div>
         <div className="ml-[12%] mt-12">
           <a
@@ -40,7 +44,7 @@ function Contact() {
             Contact Us
           </a>
         </div>
-        <div className="ml-[13%] mt-[2rem] flex sm:flex-col space-x-8 sm:space-x-0 sm:space-y-2 justify-center">
+        <div className="ml-[13%] mt-[2rem]  flex  sm:flex-col space-x-8 sm:space-x-0 sm:space-y-2 justify-center">
           <AiOutlineMail size={24} color={emailColor} />
           <FaTwitter size={24} color={twitterColor} />
           <FaInstagram size={24} color={instagramColor} />
