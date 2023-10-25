@@ -25,7 +25,7 @@
     "mdb-react-ui-kit": "^6.1.0",
     "mongodb": "^5.6.0",
     "mongoose": "^7.3.4",
-    "next": "^13.4.4",
+    "next": "^13.5.0",
     "next-auth": "^4.22.1",
     "postcss": "8.4.23",
     "react": "^18.2.0",
